@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>2.Matematicas - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">MATEMATICAS - SEGUNDO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Los conjuntos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Unión de conjuntos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Interesección de conjuntos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Adición</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Sustracción</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">La multiplicación</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">División para niños</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Figuras geometricas</button>
+                
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h2 style="text-align: center">LOS CONJUNTOS</h2><br>
+                <center><img src="img/conjuntoooo.PNG" alt="" width="420" height="340"></center><br>
+                <p>Un conjunto es un grupo de elementos que tienen algo en común, por ejemplo en la anterior imagen es un conjunto de animales.</p><br>
+                <p>Cualquiera de nosotros puede crear un conjunto, ya sea de numeros o de los miembros de tu familia. Tienes muchas posibilidades.</p><br>
+                <p>Ahora dibuja en tu cuaderno dos circulos similares a la siguiente imagen, y dibuja dentro de cada uno un conjunto que tu quieras.</p><br>
+                <center><img src="img/2conjuntos.png" alt="" width="420" height="340"></center><br>
+                <p>Ten en cuenta que hay distintos tipos de conjuntos, que veras en los proximos temas.</p><br>
+                <p>Por ahora te pondre un ejercicio, que sacamos de la pagina de la pagina de <a href="https://webdeldocente.com/matematica-segundo-grado/">La web del docente</a> por lo que te invito a que lo realices en tu cuaderno.</p><br>
+                <h3>Actividad</h3>
+                <h3>Mira los dibujos que estan en la siguiente imagen, y luego ubicalos en su respectivo conjunto</h3>
+                <center><img src="img/actividad1conjuntos.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/actividad2conjuntos.PNG" alt="" width="420" height="340"></center><br>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h2 style="text-align: center">UNION DE CONJUNTOS</h2><br>
+                <center><img src="img/unionconjuntos.PNG" alt="" width="420" height="340"></center>
+                <p>La unión de conjuntos es sencillo, imagina que tienes dos conjuntos, uno de medios de trasnporte y otro de animales. Entonces para agrupar los dos conjuntos, basta con encerrarlos dentro de otro circulo o cuadrado como tu quieras, para obtener un nuevo conjunto que estan unidos.</p><br>
+                <center><img src="img/conjutosunidos.PNG" alt="" width="520" height="340"></center>
+                <p>Para identificar que dos o mas conjuntos estan unidos, se le denota con una especie de U, como se ve en la imagen anterior. Para que no olvides colocar dicha representación.</p><br>
+                <p>Ahora resuelve la siguiente actividad sacada de la pagina de <a href="https://webdeldocente.com/matematica-segundo-grado/">La web del docente</a> en tu cuaderno.</p><br>
+                <center><img src="img/actividadunion.PNG" alt="" width="520" height="340"></center><br>
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h2 style="text-align: center">iNTERSECCIÓN DE CONJUNTOS</h2><br>
+                <p>La intersección es el punto donde dos conjuntos coinciden, es decir, es el punto donde encontramos elementos que tienen una característica común con elementos de otro o más conjuntos.</p><br>
+                <center><img src="img/interseccion.PNG" alt="" width="520" height="340"></center><br>
+                <p>Recuerda que la interseccion de conjuntos, son aquellos elementos de cada uno que tiene en comun y ahi se forma un nuevo subconjunto. y su representación grafica se da como con una especie de U alreves.</p><br>
+                <h3>Actividad</h3><br>
+                <p>En tu cuaderno dibuja los siguientes ejercicios de conjuntos y luego excribe la interseccion:</p><br>
+                <center><img src="img/interseccionactividad.PNG" alt="" width="520" height="340"></center><br>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h2 style="text-align: center">ADICIÓN</h2><br>
+                <center><img src="img/sumita.jpg" alt="" width="420" height="340"></center><br>
+                <p>La suma o adición es una operación basica que se representa con el signo +.</p>
+                <center><img src="img/pensandoooooooo.jpg" alt="" width="420" height="340"></center><br>
+                <p>Llamamos suma a la acción de añadir, juntar o agregar elementos</p><br>
+                <center><img src="img/suma235.PNG"s alt="" width="520" height="340"></center><br>
+                <p>¿Pero como podemos aprender a sumar? Es sencillo, lo que vas a hacer es hacerlo de manera grafica, por ejemplo, te dicen "Tienes 1 manzana, y tu mamá te da 2 manzanas mas, ¿cuantas manzanas tienes ahora?</p><br>
+                <center><img src="img/manzanassss.PNG"s alt="" width="520" height="340"></center><br>
+                <p>Lo que haras, es que imaginate o dibuja cada grupo de manzanas, como esta en la imagen, y luego empieza a enumerarlas y ahi estarias sumando, por lo que si hiciste el ejercicio bien, te tuvo que haber dado 3 manzanas, Sencillo ¿no?</p><br>
+                <center><img src="img/resultadoooooooo.PNG"s alt="" width="520" height="340"></center><br>
+                <p>Es asi con cualquier numero, que te coloquen, es una manera sencilla de aprender a sumar.</p><br>
+                <p>Ahora bien, hay muchas maneras de sumar,un de esas es la siguiente imagen donde hay una tabla de sumas, donde buscas el numero en la fila superior horizontal, y la combinas con la columna izquierda vertical y ahi obtendras el resultado.</p><br>
+                <center><img src="img/tablasumas.PNG"s alt="" width="520" height="340"></center><br>
+                <p>Si nos vamos a una suma mucho mas elaborada, hay que seguir los siguientes pasos:</p><br>
+                <ul>
+                    <li>Colocar los sumandos uno debajo del otro, de manera que coincidan las unidades en la misma columna.</li>
+                    <li>Sumar cada columna por separado empezando por las unidades.</li>
+                    <li>El resultado de la suma se escribe debajo de cada columna y de la línea de resultado.</li>
+                </ul><br>
+                <p>Entonces de esta manera, para el siguiente ejemplo, mira los pasos descritos</p>
+                 <center><img src="img/sumandooo.PNG"s alt="" width="420" height="340"></center><br>
+                <p>Sumemos 32 + 64. Ponemos el 32 y debajo el 64, haciendo que coincidan las unidades, es decir, el 2 y el 4. Sumamos 2 + 4 = 6 y lo ponemos debajo de la columna de las unidades. Sumamos 3 + 6 = 9 y lo ponemos debajo de la columna de las decenas.</p>
+                <br><p>Recuerda practicar y poco a poco mas a mejorar hasta el punto que ya sabras hacer sumas mentalmente, por eso te dejo el siguiente boton, donde puedes practicar suma y resta.</p><br>
+                <center><a href="sumaresta.html" class="botonejerciciosumrest">PRACTICA</a></center>
+                <!--inclustar boton-->
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h2 style="text-align: center">SUSTRACCIÓN</h2><br>
+                <center><img src="img/restaaaaaaaaaaaa.PNG" alt="" width="420" height="340"></center><br>
+                <p>La sustracción o restar es quitar una cierta cantidad a otra que ya teníamos y se representa con el signo menos ( - ).</p><br>
+                <p>De esta manera, por ejemplo si tenemos 5 manzanas y le quitamos 2 manzanas, ¿cuantas manzanas tengo ahora? </p>
+                <center><img src="img/restaa2.PNG" alt="" width="420" height="340"></center><br>
+                <p>O si tenemos por ejemplo tenemos 8 balones, pero quitamos 3 balones, ¿Cuantos balones tenemos ahora?</p><br>
+                <center><img src="img/resta3.PNG" alt="" width="420" height="340"></center><br>
+                <p>Entonces, la resta funciona de una manera sencilla, lo que vas a hacer el tomar el primero numero que te den, y con tus dedos señala dicha cantidad, y luego el segundo numero que te den, empieza a bajar dedos, y ahi tendras tus respuesta.</p><br>
+                <p>Esto puedes aplicarlo de cualqueir manera, imaginar palitos o circulos e ir quitando, por ejemplo: </p><br>
+                <center>
+                <img src="img/r1.PNG" alt="" width="420" height="340"><br>
+                <img src="img/r2.PNG" alt="" width="420" height="340"><br>
+                <img src="img/r3.PNG" alt="" width="420" height="340"><br>
+                <img src="img/r4.PNG" alt="" width="420" height="340"><br>
+                </center><br>
+                <p>Si ves que es super sencillo, entonces practica para que aprendas a restar a la perfección, y en el siguiente boton, ahy unos ejercicios de suma y resta, solo basta con que eligas que quieres restas.</p><br>
+                <center><a href="sumaresta.html" class="botonejerciciosumrest">PRACTICA</a></center>
+            </div>
+
+            <div id="tm6" class="tabcontent">
+                <h2 style="text-align: center">LA MULTIPLICACIÓN</h2><br>
+                <p>Te invito a que veas el siguiente video, donde te explican la multiplicación de la manera mas facil.</p><br>
+                <center><video width="320" height="240" controls>
+                    <source src="videos/La%20Multiplicaci%C3%B3n%20%20Videos%20Educativos%20para%20Ni%C3%B1os%20tercero.mp4">   
+                </video><br></center>
+                <p>De esta manera multiplicar es lo mismo que sumar varias veces el mismo número</p><br>
+                <p>Ahora te dejare las tablas de multiplicar del 1 al 10, para que las repases y te las aprendas, y al final hay un audio con una canción para que te las aprendas mucho mas facil</p><br>
+                <center>
+                    <img src="img/3TABLA1.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA2.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA3.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA4.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA5.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA6.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA7.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA8.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA9.PNG" alt="" width="420" height="340"><br>
+                    <img src="img/3TABLA10.PNG" alt="" width="420" height="340"><br>
+                </center><br>
+                <center><audio controls>
+                    <source src="videos/Tablas%20de%20multiplicar%201%20a%20%2010%20segundo.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio></center><br><br>
+            </div>
+
+            <div id="tm7" class="tabcontent">
+                <h2 style="text-align: center">LA DIVISIÓN PARA NIÑOS</h2><br>
+                <p>Antes de empezar a aprender a dividir tienes que saber las tablas de multiplicar. Mira el siguiente video, donde te explican que es la división de manera facil para que lo entiendas.</p><br>
+                <center><video width="320" height="240" controls>
+                    <source src="videos/La%20Divisi%C3%B3n%20%20Videos%20Educativos%20para%20Ni%C3%B1os%20segundo.mp4">   
+                </video><br><h2>¿Que es la división?</h2><br></center>
+                <p>Una división es una operación matemática que consiste en dividir un número en partes iguales. La división tiene las siguientes partes:</p><br>
+                <center><img src="img/partesdivisionsegundo.PNG" alt="" width="420" height="340"></center><br>
+                <p>-DIVIDENDO: es el número que vamos a dividir <br>
+                -DIVISOR: es el número que divide al dividendo, es decir la cantidad de partes en la que queremos dividir al dividendo.<br>
+                -COCIENTE: es el resultado de la operación<br>
+                -RESTO: es la parte que sobra, es decir que no se ha podido distribuir.</p><br>
+                <h2>¿Entonces como se resuelve una división?</h2>
+                <center><video width="320" height="240" controls>
+                    <source src="videos/como%20dividir%20segundo.mp4">   
+                </video><br><br></center>
+            </div>
+
+            <div id="tm8" class="tabcontent">
+                <h2 style="text-align: center">FIGURAS GEOMETRICAS</h2><br><center>
+                <img src="img/figurasgeometricass.jpg" alt="" width="420" height="340"><br></center><br>
+                <p>Las figuras geométricas son aquellas que tienen superficies planas delimitadas por líneas que pueden ser curvas o rectas.</p><br>
+                <p>Hay distintos tipos de figuras geometricas, entre las cuales se encuentran:</p><br>
+                <p><b>Triangulos: </b> Toda aquella figura que esta compuesta por 3 lados, hay triangulos rectangulos, es aquel que tiene un angulo que mide 90°, Acutangulo, es cuando sus tres ángulos miden menos de 90°, y los obtusángulos, son cuando uno de sus ángulos mide mas de 90°. Hay unos tipos de triangulos que se clasifican segun el tamaño de sus lados, y este esta dado, de la siguiente manera: Equilatero (3 lados iguales), isósceles (2 lados miden igual y el otro distinto) y el escaleno (Todos los lados son distintos). </p><br>
+                <center><img src="img/CLASIFICACI%C3%93N_DE_LOS_TRI%C3%81NGULOS.png" alt="" width="620" height="340"><br></center><br>
+                <p><b>Cuadriláteros: </b>Son aquellos que estan compuestos por 4 lados, como por ejemplo el rombo, el rectangulo, el cuadrado, paralelogramo, trapecio, trapezoide, etc.</p><br>
+                <center><img src="img/poster-mockup-wall-mock.jpg" alt="" width="420" height="340"><br></center><br>
+                <p><b>Figuras geometricas de mas de 4 lados: </b>Estas hay muchisimas, como lo son el pentagono, que tiene 5 lados, o el hexagono que iene 6 lados, e incluso hay figuras de 10 lados y asi sucesivamente.</p><br>
+                <center><img src="img/pent%C3%A1gono.jpg" alt="" width="420" height="340"><br></center><br>
+            </div>
+    
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

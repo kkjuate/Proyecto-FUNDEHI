@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>4.Matematicas - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">MATEMATICAS - CUARTO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Operaciones con fracciones</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Numeros decimales</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Angulos y el perimetro</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Potenciacion</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Ejercicios de division</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Minimo comun multiplo</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">Multiplicación con Números Decimales</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Círculo y Circunferencia</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">La Ecuación</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Operaciones con fracciones</h3>
+                <p>Las operaciones con fraciones son una manera diferente de hacer operaciones matematicas, es decir, la suma en diferente entre números naturales y las fracciones. Algo importante a tener en cuenta antes de comenzar es cual es el nombre de cada parte de la fracción. La parte superior de una fracción es el numerador y la parte inferior es el denominador, un ejemplo seria:</p>
+                <br>
+                <img src="img/Fraccion.png">
+                <br>
+                <p>Teniendo en cuenta esto, es el momento de saber como se hacen operaciones con las fracciones, las cuales se deben hacer de un modo u otro dependiendo si el denominador es el mismo o no, primero la suma.</p>
+                <br>
+                <h3>Suma</h3>
+                <br>
+                <p>La suma de fracciones con un denominador igual es de la siguiente manera:</p>
+                <br>
+                <img src="img/Suma%20fraccion.png">
+                <br>
+                <p>Como se indica en la imagen, el denominador sera el mismo y se sumaran los dos numeradores de la fracciones y asi obtener el resultado, pero cuando los denomindores son diferentes la operación es:</p>
+                <br>
+                <img src="img/suma%20diferente%20denominador.png">
+                <br>
+                <p>Como se ve en la imagen, se multiplican los denominadores y el siguiente paso es multiplicar el numerador de la primera fraccion con el denominador de la segunda, asi mismo, el numerador de la segunda fracción multiplica con el denominador de la primera y con el resultado de estas dos multiplicaciones se suma para dar el resultado final.</p>
+                <br>
+                <h3>Resta</h3>
+                <br>
+                <p>Basicamente se hace el mismo proceso que con la suma (ya sea con el mismo denominador o no) pero reemplazando la operación principal por la resta, un ejemplo resta en sus dos formas es:</p>
+                <br>
+                <img src="img/Resta%20fraccion.png">
+                <br>
+                <p>-------------------------------------------------------------------------</p>
+                <img src="img/resta%20diferente%20denominador.png">
+                <br>
+                <h3>Multiplicación</h3>
+                <br>
+                <p>La multiplicación de fraciones se basicamente multiplicar numerador con numerador y el denominador con el denominador</p>
+                <br>
+                <img src="img/multiplicaci%C3%B3n%20fracciones.png">
+                <br>
+                <p>si el denominador es le mismo se coloca el mismo denominador.</p>
+                <br>
+                <h3>Division</h3>
+                <br>
+                <p>el proceso de la división es, se realiza una multiplicación en cruz de las fracciones y luego con el resultado obtenido se busca reducir el numerador y el denominador del resultado a su minima expresión.</p>
+                <br>
+                <img src="img/division%20fracciones.png">
+                <br>
+                <p>En este caso, como no se puede reducir la expresion de ninguna manera ya que al dividirlo por 2, 3 o 5 una de las dos partes se vuelve decimal.</p>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Números decimales</h3>
+                <p>Los números decimales son un tipo de número natural el cual pueden indicar cosas como el peso, temperatura, precio, etc. Los decimales estan indicados por un número, seguido por una coma y por ultimo una sucesión de números que pueden ser finitos o infinitos (es decir, que el decimal puede tener un final o no).</p>
+                <br>
+                <center>
+                <img src="img/Decimales.png">
+                </center>
+                <br>
+                <p>Algo importante a tener en cuenta es que los decimales pueden aproximarse a números "normales" , es decir, el decimal 5.99 puede ser un seis debido a que la diferencia es minima, pero para esto se deben seguir una reglas.</p>
+                <br>
+                <p>Primero, no se puede aproximar un decimal infinito. Segundo, para que un decimal pueda apriximarse, sus decimas (los números despues de la coma) deben ser mayores a cinco para que se pueda cumplir.</p>
+                <br>
+                <h3>Multiplicación y division de decimales</h3>
+                <br>
+                <p>El proceso es facil; el decimal se multiplica teniendo en cuenta la cantidadd de números depues de la coma, un ejemplo seria:</p>
+                <br>
+                <img src="img/multi%20decimales.png">
+                <br>
+                <p>Para la division es un proceso parecido a la multiplicación pero invertido, el ejemplo seria:</p>
+                <br>
+                <img src="img/division%20decimal.png">
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Ángulo y el Perímetro</h3>
+                <p>El ángulo y el perímetro son dos conceptos basicos de la geometria que se deben conocer para dominar esta asignatura, sai que empecemos con:</p>
+                <br>
+                <h3>El Ángulo</h3>
+                <br>
+                <p>Es el espacio que existe en la interseccion entre dos lineas que parten de un mismo punto. los angulos pueden variar de tipos segun la distancia que exista entre las dos lineas, estos tipos son:</p>
+                <br>
+                <h3>Tipos de ángulos</h3>
+                <br>
+                <p>Ángulo agudo: Si la apertura se mayor a 0 grados pero menor a 90 grados.</p>
+                <p>Ángulo recto: La apertura de las dos lineas es de 90 grados.</p>
+                <p>Ángulo obtuso: La apertura es debe ser mayor a 90 pero menor a 180 grados.</p>
+                <p>Ángulo llano: La apertura de las dos lineas es de 180 grados, lo cual forma una linea recta.</p>
+                <p>Ángulo oblicuo: La apertura supera los 180 grados pero no los 360.</p>
+                <br>
+                <img src="img/angulos.png">
+                <br>
+                <h3>El Perímetro</h3>
+                <br>
+                <p>El perímetro se refiere a el area que ocupa el contorno una figura geometrica. hallar el perímetro de una figura sirve para saber lo grande de una figura en un espacio.</p>
+                <br>
+                <h3>¿Como hallar el perimetro de una figura?</h3>
+                <br>
+                <p>Para poder encontrar el perimetro de una figura se debe sumar el tamaño de sus lados para asi saber cuanto mide su contorno. Un ejemplo sencillo seria:</p>
+                <br>
+                <center>
+                <img src="img/cuadrado%20perimetro.png">
+                </center>
+                <br>
+                <p>en la imagen anterior se muesta un cuadrado, cual tiene una medida de 6 cm en cada lado, asi pues, si sumamos la medida de todas sus areas sabremos el perimetro.</p>
+                <br>
+                <img src="img/suma%20lados.png">
+                <br>
+                <p>Otra forma de hacerlo seria multiplicando 6 cm por 4, como el valor de los lados son iguales nos dara el mismo resultado.</p>
+                <br>
+                <center>
+                <img src="img/multi%20lados.png">
+                </center>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h2 style="text-align: center">POTENCIACION</h2><br>
+                <p>La potenciación es la operación que consiste en multiplicar un número por sí mismo varias veces</p><br>
+                <p>Las partes de la potenciación son: </p><br>
+                <center><img src="img/partespoten.PNG" alt="" width="520" height="340"></center><br>
+                <p>La base es el numero que se debe multiplicar.</p>
+                <p>El exponente indica cuantas veces se debe multiplicar la base por si misma.</p>
+                <p>La potencia es el resultado de la potenciación.</p><br>
+                <p>Siendo de esta manera las potencias se leen de la siguiente manera, se lee al base y se añade "al", junto al numero del exponente:</p><br>
+                <center><img src="img/dosalcuadrado.PNG" alt="" width="520" height="340"></center><br>
+                <p>Si fuera un 3 el exponente seria, "dos al cubo", o si fuera un cuatro "dos a la cuarta potencia" y asi susecivamente.</p><br>
+                <p>Otra manera de leerlo es decir el numero de la base elevado al numero del exponente, por ejemplo seria dos elevado a la dos.</p><br><br>
+                <h2>FACIL ¿NO?, es sencillo, recuerda la base es el número grande lo debes multiplicar por el mismo las veces que diga el exponente, es decir, el número pequeño que esta encima de la base.</h2>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h2 style="text-align: center">EJERCICIOS DE DIVISION</h2><br>
+                <p>Este tema es mas de repaso, por lo que como ya sabes dividir, te invitamos a que realices los siguientes ejercicios de repaso en tu cuaderno, son divisiones muy sencillas, para que recuerdes que practicando es como vas mejorando a hacer divisiones mucho mas rapidas e incluso mentalmente.</p><br>
+                <p>Por eso te invito a que te animes a hacer los siguientes ejercicios propuestos: </p><br>
+                <center><img src="img/ejediv1.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv2.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv3.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv4.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv5.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv6.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv7.PNG" alt="" width="420" height="340"></center><br>
+                <center><img src="img/ejediv8.PNG" alt="" width="420" height="340"></center><br>
+                <h2>Recuerda, practica con constancia y paciencia, crea tus propias divisiones con números aleatorios, y ahi vas mejorando.</h2>
+            </div>
+
+            <div id="tm6" class="tabcontent">
+                 <h3>Minimo comun multiplo</h3>
+                                <br>
+                                <p>
+                                El mínimo común múltiplo (mcm) es el número positivo más pequeño que es múltiplo de dos o más números.
+                <br>
+                Para entender mejor esta definición vamos a ver todos los términos.
+                                    <br><br></p>
+
+                <h3>Múltiplo</h3><br><br>
+                                <p>
+                Los múltiplos de un número son los que obtienes cuando lo multiplicas por otros números.
+                <br><br>
+                Vamos a ver un ejemplo de los múltiplos de 2 y de 3. Para calcular sus múltiplos hay que ir multiplicando el 2 y el 3 por 1, por 2, por 3, etc.<br>
+                <br>
+                2 x 1 = 2
+                <br>
+                2 x 2 = 4
+                <br>
+                2 x 3 = 6
+                <br>
+                2 x 4 = 8
+                <br>
+                y así sucesivamente hasta infinitos números.
+                <br>
+                3 x 1 = 3
+                <br>
+                3 x 2 = 6
+                <br>
+                3 x 3 = 9
+                <br>
+                3 x 4 = 12
+
+
+
+                y así sucesivamente hasta infinitos números.
+                </p>
+                <br>
+                <img src="img/mult.jpeg">
+                <br><br>
+                <h3>
+                Múltiplo Común
+                </h3>
+                <br><br>
+                <p>
+                Un múltiplo común es un número que es múltiplo a la vez de dos o más números, es decir, es un múltiplo común a esos números.
+                <br>
+                Siguiendo con el ejemplo anterior, vamos a ver los múltiplos comunes de 2 y de 3.<br>
+                <br>
+                </p>
+            <img src="img/mm.jpeg"><br><br>
+                <p>
+                Habrá que ver qué múltiplos tienen en común el dos y el tres, que en la imagen figuran en verde, es decir, el 6, el 12 y el 18.  Hay que tener en cuenta que los múltiplos son infinitos y que nosotros solo hemos mostrados los primeros de cada número.<br>
+                </p>
+                <br>
+                <br>
+                <h3>
+                Mínimo común múltiplo
+                </h3>
+                <br>
+                <p>
+                El mínimo común múltiplo es el número más pequeño de los múltiplos comunes.
+                <br>
+                Siguiendo con el ejemplo anterior, si los múltiplos comunes de 2 y de 3 eran 6, 12 y 18, el mínimo común múltiplo o mcm es 6, ya que es el menor de los múltiplos comunes.
+                </p>
+                <br><br>
+                <h3>
+                Cómo calcular el mínimo común múltiplo
+                </h3>
+                <br>
+                <p>
+                Se pueden utilizar dos métodos.
+                <br><br>
+                El primer método para calcular el mcm es el que hemos utilizado antes, es decir, escribimos los primeros múltiplos de cada número, señalamos los múltiplos que sean comunes y elegimos el múltiplo común más pequeño.<br><br>
+                Ahora vamos a explicar el segundo método para calcular el mcm. Lo primero que hay que hacer es descomponer en factores primos cada número. Después tendremos que elegir los factores comunes y no comunes elevados al mayor exponente y por último, tendremos que multiplicar los factores elegidos.
+                Vamos a ver un ejemplo de esto, calculando el mcm de 12 y de 8.<br><br>
+                </p>
+                <img src="img/ml.jpeg" width="610"><br><br>
+                <p>
+                Vamos a descomponer 12 y 8 en factores primos:
+                <br><br>
+                12 = 22 x 3
+                <br><br>
+                8 = 23
+                <br><br>
+                Ahora elegimos los factores comunes y no comunes elevados al mayor exponente, por lo tanto elegimos 23 y el 3.
+                <br><br>
+                Y por último los multiplicamos, por lo tanto 23 x 3 = 8 x 3 = 24
+                <br><br>
+                Así que el mcm ( 12 , 8 ) = 24
+                </p>
+            </div>
+
+            <div id="tm7" class="tabcontent">
+                <h2 style="text-align: center">MULTIPLICACION CON NUMERO DECIMALES</h2><br>
+                <p>Aunque el hecho de que estemos hablando de multiplicación de decimales y paresca complicado, NO, no lo es, es sumamente sencillo, es como multiplicar de manera normal, solo que entra en juego la coma, que te explicare luego, primero te invito a ver el siguiente video, donde te explicaran como se realiza: </p><br>
+                <center><video controls>
+                    <source src="videos/Como%20multiplicar%20decimales.mp4">
+                </video></center><br>
+                <p>Entonces, para explicarte de manera teorica, supongamos que tenemos la siguiente multiplicación de decimales: </p><br>
+                <center><img src="img/ejerciciomultideci.PNG" alt="" width="420" height="340"></center><br>
+                <p>Lo primero que debes hacer es hacer la multiplicación normal, quedaria tal que asi: </p><br>
+                <center><img src="img/ejerciciomultideci2.PNG" alt="" width="420" height="340"></center><br>
+                <p>Resultado que daria:</p><br>
+                <center><img src="img/ejerciciomultideci3.PNG" alt="" width="420" height="340"></center><br>
+                <p>Ahora vamos a mirar en la parte inicial de la multiplicacion, cuantos espacios hay de derecha a izquierda hasta llegar al punto decimal, asi tanto arriba como abajo segun se requiera, en nuestro caso si.</p><br>
+                <center><img src="img/ejerciciomultideci4.PNG" alt="" width="420" height="340"></center><br>
+                <p>Como observamos, hay dos espacios arriba y dos abajo, por lo que los sumamos, y serian 4. Esta cantidad de espacios es la que debemos movernos de derecha a izquierda en el resultado y ahi es donde ubicaremos el punto decimal.</p><br>
+                <center><img src="img/ejerciciomultideci5.PNG" alt="" width="420" height="340"></center><br>
+                <p>Ahi colocamos el punto decimal, y listo, ya tenemos nuestros ejercicio resuelto.</p><br>
+                <center><img src="img/ejerciciomultideci6.PNG" alt="" width="420" height="340"></center><br>
+                <h2>Listo, si ves que es super sencillo, por eso te invito a practicar y veras que son bastante sencillos de resolver.</h2>
+            </div>
+
+            <div id="tm8" class="tabcontent">
+<h3>Circulo y circunferencia</h3>
+                <br><br>
+                <p>La circunferencia es una línea curva, cerrada y plana cuyos puntos están a la misma distancia del centro.<br>
+                El círculo es una figura plana formada por una circunferencia y su interior.</p> <br>
+                                <img src="img/cir.png" width="600"><br><br>
+                <h3>
+                Circunferencia
+                </h3>
+                <br>
+                <p>
+                Centro: Punto central. Está a la misma distancia del resto de puntos de la circunferencia.
+<br><br>
+
+
+     - Radio: Segmento que une el centro con un punto cualquiera de la circunferencia.
+
+<br><br>
+
+     - Diámetro: Segmento que une dos puntos de la circunferencia pasando por el centro. Mide el doble que el radio.
+
+<br><br>
+
+     - Cuerda: Une dos puntos de la circunferencia sin pasar por el centro.
+
+<br><br>
+
+     - Arco: Porción de circunferencia limitada por una cuerda.
+
+ <br><br>
+
+     - Semicircunferencia: Es la mitad de una circunferencia.
+                </p>
+                <br><br>
+                <h3>
+                Posiciones de una recta respecto de una circunferencia
+                </h3>
+                <br><br>
+                <p>
+                Recta tangente: Recta que tiene un punto en común con la circunferencia.
+<br><br>
+
+
+     - Recta secante: Recta que tiene dos puntos en común con la circunferencia.
+<br><br>
+
+ 
+
+     - Recta exterior: Recta que no tiene ningún punto en común con la circunferencia.
+
+
+                </p>
+                <br><br>
+                <img src="img/Posicionesrelativas.png" width="600">
+                <h3>
+                Circulo
+                </h3>
+                <br><br>
+                <p>
+                Los elementos son los mismos que la circunferencia, excepto la semicircunferencia, y tres más:
+<br><br>
+
+         - Semicírculo: Mitad de un círculo. El diámetro divide al círculo en dos semicírculos.
+<br><br>
+         - Sector circular: Porción de círculo limitada por dos radios y su arco.
+<br><br>
+         - Segmento circular: Porción de círculo limitada por una cuerda y su arco.
+
+                </p>
+                <br><br>
+                <h3>
+                Area y perimetro
+                </h3>
+                <br><br>
+                <p>
+                El perímetro de un círculo es llamado circunferencia y se define por:
+
+                </p>
+                <br><br>
+                <h3>
+                C = 2 π r = πⅆ<br><br>
+                </h3>
+                <p>
+                donde r es el radio, d el diámetro y π ≈ 3.141592654 .<br> El área de un círculo con radio r y diámetro d es:
+                </p>
+                <br><br>
+                <h3>
+                A = π r 2 = π ( d2 ) 2
+                </h3>
+                <br><br>
+                <h3>
+                Numero PI
+                </h3>
+                <br>
+                <p>
+                El número pi es una de las constantes matemáticas más importantes e indica la relación entre el perímetro (L) y el diámetro de una circunferencia (D).
+                </p>
+                <br>
+                <h3> L = pi x D</h3>
+                <br>
+                <p>Pi es un número irracional, es decir, es un número que no puede ser expresado como fracción de dos números enteros, y por tanto tiene un número infinito de decimales.</p>
+<br>
+                
+            </div>
+
+            <div id="tm9" class="tabcontent">
+<h3>Ecuacion</h3><br><br>
+                <p>Una ecuación es una igualdad entre expresiones algebraicas que se cumple solamente para algunos valores de las letras.
+ <br><br>
+Resolver una ecuación es encontrar el valor de la incógnita. Para esto debes aplicar algunas de las propiedades de las operaciones que has aprendido en cursos anteriores.</p>
+                <br><br>
+                <h3>
+                Elementos
+                </h3>
+                <br>
+                <br>
+                <p>
+                Miembros: son las expresiones que aparecen a cada lado del signo igual ( =)
+ <br><br>
+                </p>
+                <img src="img/e1.jpg" width="600">
+                <br><br>
+                <p>
+                Términos: son los monomios de cada miembro.
+                </p>
+                <br><br>
+                <img src="img/e2.jpg" width="600">
+                <p>
+                    <br><br>
+                Incógnitas: Son las letras que aparecen en la ecuación.
+                </p>
+                <br><br>
+                <img src="img/e3.jpg" width="600">
+                <p>
+                    <br><br>
+                Grado de la ecuación: es el mayor exponente con que figura la incógnita (una vez realizadas todas las operaciones).
+                </p>
+                <br><br>
+                <img src="img/e4.jpg" width="600">
+                <p>
+                    <br><br>
+                Soluciones: son los valores que deben tener las incógnitas para que la igualdad entre los miembros sea cierta.
+<br><br>
+                </p>
+                <img src="img/e5.jpg" width="600">
+                <br><br>
+                <h3>
+                Ejemplos de ecuaciones:
+                </h3>
+                <br><br>
+                <img src="img/mls.JPG" width="600">
+                <br>
+                <p>
+                En estos ejemplos puede observarse lo siguiente:
+<br><br>
+Hay una expresión escrita a la izquierda del signo igual y hay una expresión escrita a la derecha del signo igual. La que está antes del signo igual recibe el nombre de primer miembro , la expresión que está a la derecha del signo igual se llama segundo miembro.
+<br><br>
+En una ecuación puede haber más de una incógnita; es decir, más de un valor desconocido.
+<br><br>
+Una incógnita puede tener como exponente al número 1 (x 1 = x ), al número 2 (x 2 ), al número 3 (x 3 ), al número 4 (x 4 ), etc. El exponente indica el grado de la ecuación . Debe leerse "equis elevado a uno, equis elevado a dos, etc."
+<br><br>
+¿Cuándo está resuelta una ecuación?
+<br><br>
+Una ecuación está resuelta cuando se ha encontrado el valor o los valores de la o las incógnitas que hacen verdadera la igualdad. Este valor recibe el nombre de raíz o solución.
+                </p>
+            </div>
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

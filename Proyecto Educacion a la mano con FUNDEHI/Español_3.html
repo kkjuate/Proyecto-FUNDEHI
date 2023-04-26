@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>3.Lenguaje - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">LENGUAJE - TERCERO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Los pronombres</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">La autobiografia</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">El titulo y sub-titulo</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Los signos de puntuacion</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Las palabras agudas, graves y esdrujulas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Descripcion de personajes</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">Resumen</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Preguntas cerradas y abiertas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">Tipos de textos</button>
+                
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Pronombres</h3>
+                <br>
+                <h3>Comenzaremos con los pronombres.</h3>
+                <br>
+                
+                <p>Los Pronombres son palabras que sustituyen al nombre para evitar su repetición. Es decir, señalan o representan a personas, cosas o hechos que son conocidos por el que habla y el que escucha.</p>
+                <br>
+                <center>
+                    <img src="img/es3-1.png" width="450px" height="450px">
+                </center>
+                    <br>
+                <p> Los pronombres son palabras que se emplean para referirse a las personas, los animales o las cosas sin nombrarlas (yo, tú, él, nosotros, eso, aquel),<br><br> siendo de esta manera posible; sustituir al sustantivo, definir o variar el número, género y hasta persona en una oración.<br><br>
+
+Por ejemplo;
+<br>
+                    <br>
+Fernando estudia publicidad. – Él estudia publicidad.
+<br><br>
+En el ejemplo anterior; «Fernando» se puede sustituir por el pronombre «Él» y la oración no pierde sentido ya que el pronombre no cambia el género (masculino) ni el número (singular).</p>
+                <br>
+                <center>
+                <img src="img/3e1-2.JPG">
+                </center>
+                <br>
+          
+
+                <center>
+                
+                </center>
+                
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Autobiografia.</h3>
+                <br>
+                <h3> Ahora que sabemos que son los pronombres. <br>
+                Veremos que es un Autobiografia.
+                </h3>
+                <br>
+                
+                <p>Una autobiografía es el relato de tu propia vida, narrada por ti mismo/a. En la autobiografía tú eres el protagonista y el narrador. <br>
+                En tu autobiografía has de contar experiencias que has tenido en tu vida y los recuerdos que te han dejado los hechos que has vivido, así como los efectos que estos hechos han producido en ti.<br><br>
+                    Para escribir tu autobiografía puedes seguir los puntos del organizador gráfico que te dejo debajo y que son los siguientes:
+<br> <br>
+¿Como te llamas? ¿Cuál es tu fecha de nacimiento? ¿Dónde naciste?
+                    <br>
+                    Y demas cosas que te describan.
+                    <br> <br>
+                    <center>
+                         <h3>
+                Puedes urilizar esta imagen como referencia.
+                </h3>
+                    </center>
+                   
+                    <center>
+                    <img src="img/3e1-3.jpg">
+                    </center>
+                    
+                    
+                </p>
+                <center>
+                    <h3>
+                    Veamos un video para saber mejor que es un autobiografia. 
+                        
+                    </h3>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20%C2%BFQU%C3%89%20ES%20UNA%20AUTOBIOGRAF%C3%8DA__480p.mp4">
+                   
+                </video>
+                </center>
+                <br>
+                <center>
+                <h3>
+                    Increible, ahora mira una biografia para que te guies. <br> Intenta escribir tu biografia en tu cuaderno. <br><br>
+                    <img src="img/auto.jpg" width="450" height="300">
+                </h3>
+                </center>
+                
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Titulo y Sub-titulo.</h3>
+                <br>
+                <h3>
+                Bien, ahora veamos que es el titulo y sub-situlo.
+                
+                </h3>
+                <br>
+                <br>
+                <p>El título: es la palabra o frase con que se da a conocer un escrito, en cualquier tipo de texto, es decir, anunciar de forma clara el contenido a presentar. <br><br>
+                    El subtitulo: son los subtemas que nos amplían la información con relación a él.</p>
+                <br>
+                <center>
+                <img src="img/es3-3.jpg" width="500" height="350">
+                </center>
+                <br>
+                <br>
+                <p>
+                Uso de títulos y subtítulos.<br>
+                    <br>
+                    El título introduce al tema, es decir el asunto básico y primordial de lo que trata el texto. <br>Los subtítulos se usan para distinguir los elementos que integran el tema, llamados subtemas.
+                </p>
+                <br>
+                <br>
+                 <center>
+                    <h3>
+                    Veamos un video para saber mejor para que se utilizan los titulos y subtitulos.
+                        
+                    </h3>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20T%C3%8DTULOS%20Y%20SUBT%C3%8DTULOS_480p.mp4">
+                   
+                </video>
+                </center>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>Signos de puntuacion.</h3>
+                <br>
+                
+                <h3>Ahora veremos que cuales son los signos de puntacion.</h3>
+                <br>
+                
+                <p>Los signos de puntuación son usados para darle sentido a las frases y oraciones, funcionan para distinguir, delimitar, otorgar jerarquía a nivel sintáctico y ayudar a lector a determinar cuáles son las ideas principales y las secundarias dentro de un párrafo.</p>
+                <br>
+                <center>
+                <img src="img/es3-4.jpg" width="450" height="400">
+                </center>
+                <br>
+                <p>
+                Sin ellos, como ya que ha probado en distintas ocasiones mediante diversos escritos, la comprensión lectora se dificultaría, sin embargo son muchos lo que no entienden claramente como emplearlos dentro de una oración.
+                    <br>
+                </p>
+                <br>
+                <br>
+                <center>
+                <h3>
+                Veamos los distintos signos de puntuacion.
+                </h3>
+                </center>
+                    <br>
+                <h3> Punto y aparte (.)</h3> <br>
+                <p>
+                Este singo de puntuación de utiliza para separar dos párrafos que contienen ideas diferentes, representa el fin de una idea y el comienzo de otra nueva<br> Por ejemplo: «María es una chica muy glotona, a veces puede pasar todo el día comiendo. Una vez cuando estábamos en su casa….».
+                </p>
+                <br>
+                  <h3> Punto y seguido (.)</h3> <br>
+                <p>Se emplea dentro del mismo párrafo para separar dos enunciados diferentes que sin embargo tienen algún tipo de vinculación. <br>Por ejemplo: «María comía en grandes cantidades, yo no podía parar de verla. La verdad es que sentí un poco de malestar».</p>
+                 <br>
+                  <h3> La coma (,)</h3> <br>
+                <p>Ésta funciona para señalar pausas dentro de la oración, pero cuenta con varios usos, el primero de ellos es para enumerar, por ejemplo: «me compré una camisa, un pantalón y unos zapatos». Se usa para aclaraciones, incisos, y ampliaciones. <br><br>Por ejemplo: «María, mi sobrina, adora comer» / «Me encanta el color rojo, sobre todo como luce en mi piel». <br>Además se utiliza para dar paso a explicaciones, por ejemplo: «Tendré que ir al médico, porque me duele mucho el estómago».</p> 
+                <br><br>
+                <center> 
+                <img src="img/pun.jpg" width="605" height="350">
+                    </center>
+                <br><br>
+                <h3> El punto y coma (;)</h3> <br>
+                <p>
+                    Representa en la oración una pausa mayor que la coma, pero menor que el punto y seguido. Se usa para separar elementos en una enumeración cuando hay explicaciones complejas. <br>Por ejemplo: «éste es el plan, ustedes irán primero, por la izquierda; nosotros iremos a la derecha; y el tercer grupo por el medio».<br> <br> En general el uso de este signo es subjetivo pues casi siempre puede sustituirse por el punto y seguido, por lo que será a juicio del escritor.
+                </p> <br>
+                <h3> Las comillas ("")</h3> <br>
+                <p>
+                    Su uso es simple, se coloca para abrir y cerrar citas, frases, palabras u sentencias de carácter irónico, escritas en otro idioma o para realizar algún tipo de indicación acerca de esa parabla. También se les puede encontrar en esta versión gráfica ("").</p>
+                    <br>
+                
+                    <h3>  Dos puntos (:)</h3> <br>
+<p>
+             Los dos puntos son un signo de puntuación que se usa para llamar la atención o hacer una pausa enfática sobre lo que sigue. Es representado con dos puntos, uno suspendido sobre el otro (:).
+<br>
+    <br>
+Al igual que la coma, el punto y el punto y coma, los dos puntos son un signo delimitador, es decir, que es utilizado para delimitar unidades sintácticas inferiores al enunciado.   
+                </p>
+                <br>
+                
+
+                
+                
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h3>Acentos</h3>
+                <br>
+                <h3>Vamos muy bien, sigamos adelante. <br><br> Hoy sera los Acentos.</h3>
+                <br>
+                <p>En nuestra lengua, las palabras pueden clasificarse de acuerdo a la ubicación de su sílaba tónica, es decir, de aquella en la cual recae la mayor pronunciación de la palabra. <br><br>
+                    Vamos a ver las clasificaciones:<br>
+                </p>
+                 <center>
+                    <img src="img/til.gif">
+                        </center><br>   
+                 <p>   Las palabras agudas, graves, esdrújulas y sobresdrújulas se diferencian por su sílaba acentuada o tónica.<br><br>
+
+En español, cada una de estas palabras tiene el acento prosódico, o mayor fuerza de voz, en una sílaba distinta y lleva tilde o acento ortográfico conforme a las normas de acentuación.<br><br>
+
+De este modo, al hablar de palabras agudas, graves, esdrújulas y sobresdrújulas se hace referencia a diferentes tipos de palabras según su acentuación.<br><br>
+
+Para saber a qué clase pertenece una palabra hay que identificar su sílaba tónica.<br>
+<br><br>
+</p>
+                <h2>Palabras AGUDAS</h2><br>
+                <p>
+                Las palabras agudas son las que tienen la mayor fuerza de voz en la última sílaba. Llevan tilde solo cuando terminan en -n, en -s o en una vocal.<br><br>
+                    
+                </p>
+                <center>
+                <h4>Veamos uno ejemplos: </h4><br>
+                <p>
+                -además<br>
+                    
+-ají<br>
+-mamá<br>
+-maní<br>
+-sofá<br>
+-tacón<br>
+-animal<br>
+-calor<br>
+-pared<br>
+-pesar<br>
+-reloj<br>
+-salud<br>
+-señor<br>
+                </p>
+                    </center>
+                
+                <br><br>
+                <h2>Palabras GRAVES o LLANAS</h2><br>
+                <p>
+                Las palabras graves o llanas son las que tienen la mayor fuerza de voz en la penúltima sílaba. Se acentúan gráficamente solo cuando terminan en consonantes distintas a -n y -s. No llevan tilde cuando terminan en vocal o en las consonantes -n y -s.<br><br>
+                    
+                </p>
+                <center>
+                <h4>Veamos uno ejemplos: </h4><br>
+                <p>
+                -ámbar <br>
+-cárcel<br>
+-césped<br>
+-cóndor<br>
+-difícil<br>
+-fácil<br>
+-fútbol<br>
+-lápiz<br>
+-barco<br>
+-calendario<br>
+-llave<br>
+-mantel<br>
+-palabra<br>
+-planeta<br>
+-saludo<br>
+                </p>
+                    </center>
+                <br><br>
+                <h2>Palabras ESDRUJULAS</h2><br>
+                <p>
+               Las palabras esdrújulas tienen la mayor fuerza de voz en la antepenúltima sílaba y siempre llevan tilde o acento gráfico.<br><br>
+                    
+                </p>
+                <center>
+                <h4>Veamos uno ejemplos: </h4><br>
+                <p>
+           -ábaco <br>
+-brújula<br>
+-cámara<br>
+-esdrújula<br>
+-médico<br>
+-oxígeno<br>
+-pájaros<br>
+-pirámide<br>
+
+                </p>
+                    </center>
+                 <br><br>
+                <h2>Palabras SOBREESDRUJULAS</h2><br>
+                <p>
+              Las palabras sobresdrújulas tienen la mayor fuerza de voz en la sílaba ante o trasantepenúltima, es decir, la sílaba anterior a la penúltima, y siempre llevan tilde o acento gráfico.<br><br>
+
+Las sobreesdrújulas son palabras compuestas y poco frecuentes en el español hablado y escrito.<br><br>
+                    
+                </p>
+                <center>
+                <h4>Veamos uno ejemplos: </h4><br>
+                <p>
+           -cayéndoseles <br>
+-encontrándomelo <br>
+-jurándosela<br>
+-permítasenos<br>
+-vendiéndoselos<br>
+
+                </p>
+                    </center>
+                <center>
+                    <h3>
+                    Ahora veamos un video que nos explique mejor.
+                    </h3>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20%C2%BFC%C3%B3mo%20acentuar_%20-%20AGUDAS,%20GRAVES,%20ESDR%C3%9AJULAS,%20SOBREESDR%C3%9AJULAS,%20S%C3%8DLABA%20T%C3%93NICA,%20S%C3%8DLABA%20%C3%81TONA_480p.mp4">
+                   
+                </video>
+                </center>
+                
+                
+                
+                
+                
+            </div>
+            <div id="tm6" class="tabcontent">
+                <h3>Personajes</h3>
+                <br>
+                <h3>Increible ahora sigamos con el tema.<br><br> Hoy sera los personajes.</h3>
+                <br>
+                <p>Un personaje es un ser animado real o ficticio que actúa en un relato (literario, dramático o visual). Es decir, un personaje es un ente al que se le atribuyen una serie de acciones, palabras y/o pensamientos en el marco de una historia.<br><br>
+
+Los personajes pueden ser personas, animales, cosas animadas, seres fantásticos o seres sobrenaturales. En todo tipo de relato o narración hay personajes. Por ejemplo, obras de teatro, novelas, cuentos, películas, series de TV o, incluso, pinturas o esculturas que cuentan historias.
+                <br><br></p>
+                <center>
+                <img src="img/per1.jpg" width="605" height="450">
+                </center>
+                <br>
+                <br>
+                <h3>Veamos los tipos de personajes.
+                </h3>
+                <p>
+                    <br><br>
+                Existen diversas formas de clasificar los personajes, atendiendo a una u otra consideración. Por ejemplo:<br><br>
+                </p>
+
+<h3>-Según su participación en la historia.</h3> <p><br><br>De acuerdo a su importancia en el desarrollo de la trama, pueden ser:<br><br>
+*Personajes primarios o principales. Los más importantes del relato, en torno a los cuales gira la historia y a los que más acompañamos a lo largo de ella.<br><br>
+*Personajes secundarios. Son los personajes de reparto, es decir, los que intervienen en la historia pero no son muy relevantes o determinantes en ella, y los vemos sólo cuando resulta necesario.<br><br>
+*Personajes terciarios. Aquellos que apenas intervienen circunstancialmente en la historia, sin tener demasiado que ver en ella, y que quienes no sabemos prácticamente nada.<br><br>
+                </p>
+                    <center>
+                    <img src="img/perss.jpg" width="605" height="450">
+                    </center>
+                
+               <br>
+<h3>-Según su rol narrativo.</h3> <br> <p>Atendiendo ahora al papel que desempeñan en la trama, podemos hablar de:<br><br>
+*Protagonistas. Los personajes principales del relato, sobre quienes tiene que ver la trama. Pueden ser héroes, antihéroes o simplemente protagonistas circunstanciales, pero sobre ellos versa el relato y rara vez éste puede continuar si ellos mueren o han desaparecido.<br><br>
+*Antagonistas. Aquellos que adversan al protagonista, que se oponen a que cumpla con sus aspiraciones o que simplemente tienen deseos contrarios a los suyos.<br><br>
+*Tritagonistas. Son los personajes que no toman partido en la historia, sino que la transitan de manera eventual, sin tener que ver con las luchas internas de la trama.<br><br>
+                    </p>
+                    <center>
+                    <img src="img/persss.jpg" width="605" height="350">
+                    </center>
+               <br>
+<h3>-Según su profundidad psicológica.</h3><br> <p> De acuerdo a la densidad de su construcción imaginaria, podemos hablar de:<br><br>
+*Personajes planos o superficiales. Aquellos que no presentan mucha complejidad, ni mucha elaboración en sus motivaciones profundas, sino que son bosquejos de sí mismos.<br><br>
+*Personajes redondos o profundos. Por el contrario, son personajes densamente construidos, con mucho bagaje emocional o psicológico, es decir, más completamente elaborados.
+
+
+                </p>
+                <br><br>
+                <center>
+                <h3>
+                    <br>
+                Perfecto, ahora veamos un video y crea tu propio personaje en tu cuaderno.
+                </h3>
+                    <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20C%C3%B3mo%20describir%20a%20los%20personajes_480p.mp4">
+                   
+                </video>
+                    </center>
+            </div>
+            <div id="tm7" class="tabcontent">
+                <h3>Resumen</h3>
+                <br>
+                    
+                <p>Resumir es buscar lo esencial de los hechos, personajes o ideas indispensables para la comprensión de un texto, eliminando todo lo demás.<br><br>
+                El propósito de un resumen es dar al lector un relato de las ideas principales y las características de un texto. Por lo general, tiene entre uno y tres párrafos, otras veces,  es sólo una o dos oraciones, todo depende de la duración y la complejidad del texto original y su propósito. 
+                </p>
+                <center>
+                
+                <img src="img/lib.jpg" width="605" height="300">
+                    </center>
+                <br>
+                <br>
+                <p>
+                    Lo más importante a la hora de hacer un resumen es que pueda llamar la atención del lector, ofreciendo un resumen de fácil acceso y entendimiento. Otro punto importante a considerar es que en un resumen nunca se anotaran ideas, juicios ni interpretaciones personales, si los tienes agrégalos al final del resumen a manera de “conclusiones personales”. <br><br>
+
+La mejor manera de hacer un resumen es siguiendo los siguientes pasos.<br><br>
+
+1-  Lee silenciosamente todo el texto.<br><br>
+
+2 – Sepáralo en párrafos. Recuerda que cada punto aparte marca el término de un párrafo<br><br>
+
+3- Lee por párrafos subrayando las ideas más importantes de cada uno. Si es necesario escribe notas al margen que para ti sean importantes.<br><br>
+
+4- Todo lo subrayado escríbelo en tu cuaderno.<br><br>
+
+5- Ordena lo escrito y redacta el resumen tratando de ser claro, exacto, coherente y fiel a lo que vas a resumir.<br>
+<br>
+6- Revisa lo escrito y suprime los términos inadecuados corrigiendo a la vez la puntuación y la ortografía.<br><br>
+
+Si el resumen es de un libro de lectura para el colegio, debes agregar a tu informe los siguientes puntos:<br><br>
+
+- Nombre, curso y materia<br>
+- Título del texto<br>
+- Autor<br>
+- Tema<br>
+- Luego agregas el resumen del contenido (por capítulos en vez de párrafos)<br><br>
+                    
+                </p>
+                <center>
+                <h3>
+                Ahora veamos un ejemplos de resumen <br><br>
+                </h3>
+                    <img src="img/res.jpg" width="605" height="350">
+                    </center>
+                
+            </div>
+            <div id="tm8" class="tabcontent">
+                <h3>Preguntas</h3>
+                <br>
+                <h3>
+                
+                Falta muy poco, sigamos con las preguntas abiertas y cerradas.</h3>
+                <br>
+                <br>
+                <h3>
+                
+                Definamos que es una pregunta</h3> <br>
+                <p>Una pregunta es una accion que se realiza con la intención de obtener algún tipo de información. Al pronunciar esta interrogación, se espera recibir una respuesta que incluya los datos buscados.</p>
+                <br><br>
+                <h3>
+                Según la respuesta esperada a las preguntas, se pueden diferenciar las preguntas cerradas y las preguntas abiertas.
+
+
+                </h3>
+                <h3>
+                    <br><br>
+                Preguntas abiertas.
+                </h3>
+                <p>
+                    <br> <br>
+                Las preguntas abiertas son aquellas que le permiten al interpelado responder aquello que desee, ya que no se le imponen opciones entre las que debe elegir su respuesta.
+<br> <br>
+
+
+
+
+
+                </p>
+                <img src="img/pre.jpg" width="605" height="350">
+                <h3>
+                    <br> <br>
+                Algunos ejemplos pueden ser:
+                    <br><br> 
+                </h3>
+               <p>
+               1. ¿Cómo estás?<br>
+Este es uno de los ejemplos de preguntas abiertas más simples y que más utilizamos en nuestro día a día, que nos sirve para saber más sobre la otra persona.<br><br>
+
+2. ¿Qué te gustaría hacer ahora?<br>
+Con este tipo de pregunta estamos dejando libertad de respuesta a la persona interrogada, pues no pregunta por nada específico.<br><br>
+
+3. ¿Qué planes tienes para este fin de semana?<br>
+Lo mismo ocurre con esta otra pregunta abierta y personal, que puede tener todo tipo de respuestas según lo que quiera el interlocutor.
+<br><br>
+4. ¿Cómo describirías tu vida en este momento?<br>
+Otro ejemplo de pregunta abierta es esta, en la que le preguntamos cómo percibe de forma subjetiva su estado actual.
+<br><br>
+5. ¿Cómo te hace sentir eso?<br>
+Esta es otra de las preguntas abiertas más utilizadas en psicología, pues permite a la persona expresar sus emociones abiertamente.
+
+
+
+                </p>
+                                <img src="img/prea.jpg" width="605" height="450">
+
+               <br><br>
+               <h3>
+                Preguntas cerradas
+                </h3>
+                <br> <br>
+               <p>
+                Son las que piden al encuestado que elija entre un conjunto de respuestas, como “sí/no” o entre una lista de opciones múltiples, etc. <br> <br>
+
+Las preguntas cerradas son fundamentales para recopilar las respuestas de nuestros encuestados dentro de un marco limitado de opciones. Las preguntas cerradas son la base de todas las técnicas de análisis estadístico aplicadas en cuestionarios y encuestas.
+                </p>
+                <img src="img/preb.jpg" width="605" height="450">
+                <br>
+                <h3>
+                Algunos ejemplos pueden der:
+                </h3>
+                <br><br>
+                <center>
+                <p>
+                ¿Escuchas la radio?<br>
+                    Si/No
+                    <br><br>
+                    ¿Ves televisio?<br>
+                    Si/No
+                    <br><br>
+                    ¿Ya desayunaste?<br>
+                    Si/No
+                    <br><br>
+                    ¿Te gustan los videojuegos?<br>
+                    Si/No
+                    <br><br>
+                    ¿Aprobaste tu examen?<br>
+                    Si/No
+                </p>
+                </center>
+            </div>
+            <div id="tm9" class="tabcontent">
+                <h3>Textos</h3>
+                <br>
+                
+                <h3>
+                Y por ultimo los textos. Bien hecho.
+                </h3>
+                
+                <br>
+                <p>¿Sabes lo que es un texto?.<br><br> A veces resulta complejo explicar con palabras algún concepto conocido y utilizado diariamente. Por ello, simplificaremos la explicación indicando que un texto es una composición de letras, codificado en un sistema de lectura o escritura, que tiene como propósito, entregar información.</p>
+                <br>
+                <br>
+                <img src="img/livv.jpg" width="600" height="350">
+                <br>
+                <br>
+                <h3>
+                ¿Qué tipos de textos existen?
+                </h3>
+                <br>
+                <h4>
+                Descriptivo
+                </h4>
+                <p>
+                Dentro de los tipos de textos es, tal vez, el más directo y su función es describir un producto o servicio de una forma clara y concreta para que rápidamente le transmita al lead su utilidad.<br><br>
+                </p>
+                 <h4>
+                Expositivo
+                </h4>
+                <p>
+                Exponer es colocar algo a la vista de los demás, por ejemplo un producto o en el caso literario una idea, teoría o tesis. Cuando exponemos no juzgamos ni analizamos, simplemente mostramos algo.<br><br>
+                </p>
+                  <h4>
+               Científico
+                </h4>
+                <p>
+                Este es muy importante y, también, está vinculado a la autoridad. El modo científico utiliza datos comprobables y cita fuentes. Es una forma de demostrar lo fidedigno y veraz que es tu dominio. Encuestas, estadísticas, informes, entre otros tipos de textos.<br><br>
+                </p>
+                 <h4>
+               Argumentativo
+                </h4>
+                <p>
+                Un argumento es un “instrumento para dejar algo en claro” y es un tipo de texto muy útil cuando lo que necesitamos es persuadir.<br><br>
+                </p>
+                <img src="img/livr.jpg" width="600" height="350"> <br><br>
+                <h4>
+               Narrativo
+                </h4>
+                <p>
+               Una buena historia entra en regiones de nuestro cerebro que están dominadas por símbolos. Por lo tanto si manejamos bien esos símbolos en un texto construiremos un puente con nuestra audiencia.<br><br>
+                </p>
+                 <h4>
+               Literario
+                </h4>
+                <p>
+               Si bien, todo es literatura, tenemos que colocar este tipo como “estrictamente literario”, para crear un espacio dedicado a los textos artísticos y creativos. Es que, la literatura – y el arte en general – están íntimamente ligados al entretenimiento.<br><br>
+                </p>
+                <h4>
+              Instructivo
+                </h4>
+                <p>
+               Son los textos que, mediante instrucciones, nos enseñan a realizar algo. El famosos tutorial paso a paso es el mejor ejemplo.<br><br>
+                </p>
+                
+                <center>
+                <h3>
+                    Miremos este video para que nos quede claro.
+                    </h3>
+                    <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20%C2%BFCu%C3%A1les%20son%20los%20tipos%20de%20texto%20que%20hay_%20%20Primaria_480p.mp4">
+                   
+                </video>
+                </center>
+            </div>
+           
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

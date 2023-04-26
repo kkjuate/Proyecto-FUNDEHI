@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>5.Lenguaje - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">LENGUAJE - QUINTO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Entrevista</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">La caricatura</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">La noticia</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">El articulo</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">La cronica</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">El debate</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h2 style="text-align: center">LA ENTREVISTA</h2><br>
+                <center><img src="img/entrevista.png" alt="" width="420" height="340"></center><br>
+                <p>La entrevista es algo bastante sencillo pero que tiene bastante seriedad dependiendo el caso.</p><br>
+                <p>La entrevista se puede explicar como una charla o una conversación entre dos o más personas, según se requiera, esto con el fin de obtener alguna información o similar</p><br>
+                <center><img src="img/entrevista2.png" alt="" width="420" height="340"></center><br>
+                <p>Estoy seguro que en algún momento has esuchado hablar de entrevistas, ya sea cuando alguien va a conseguir un trabajo, o en un canal de televisión cuando le hacen una entrevista a algun cantante o actriz, entre muchas mas situaciones similares.</p><br>
+                <center><img src="img/entrevista3.png" alt="" width="420" height="340"></center><br>
+                <p>Para muchos una entrevista es una situación de muchos nervios, pero no siempre es asi, algo que debes tener en cuenta es que debes mostrar tranquilidad, seguridad en lo que dices, y mantener una buena presentación en caso de que seas el entrevistado o entrevistada.</p><br>
+                <p>En caso de que tu seas la personas que haces la entrevista, ten en cuenta, que debes mostrar confianza para que la persona que te va a responder no tenga temor, has preguntas concretas, claras y necesarias, es decir, que esa pregunta tenga un objetivo que te permita obtener la información que requieras. Ademas ten en cuenta a que tipo de entrevista estaras realizando, porque si es laboral es distinto a una de tipo periodistico o una cientifica. Entonces ten claro esa parte</p><br>
+                <center><img src="img/entrevista4.png" alt="" width="420" height="340"></center><br>
+                <h3 style="text-align: center">Ahora te invito a que crees hagas una entrevista a alguien cercano, por ejemplo de tipo periodistico, simulando que vas a obtener información de un actor, entonces ¿que preguntas harias?</h3><br>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>La Caricatura</h3>
+                <p>Es un retrato el cual deforma y/o exagera los rasgos más caracteristicos de una persona. Lo que se busca con esto es hacer una satira de las caracteristicas mas relevantes o graciosas de una persona y resaltarlos aun más.</p>
+                <br>
+                <center>
+                <img src="img/Caricatura.png">
+                </center>
+                <br>
+                <p>Hay varios tipos de caricaturas, cada una con un objetivo especifico, las cuales son:</p>
+                <br>
+                <p>Caricatura política: Tiene como finalidad ridiculizar a personas relevantes en el mundo de la politica y resaltar sus errores.</p>
+                <br>
+                <img src="img/Matador_Caricaturas.jpg">
+                <br>
+                <p>Caricatura social: Lo que busca es reflejar aspectos relevantes de la sociedad.</p>
+                <br>
+                <img src="img/matador_social.jpg">
+                <br>
+                <p>Caricatura Literaria: A traves de un texto, quiere mostrar  algun rasgo especifico de un personaje de la lectura, un ejemplo seria:</p>
+                <br>
+                <p>Érase un hombre a una nariz pegado,
+                érase una nariz superlativa,
+                érase una alquitara medio viva ,
+                érase un peje espada muy barbado.
+                </p>
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>La Noticia</h3>
+                <p>La noticia es un comunicado el cual busca informar sobre un tema, evento o acontecimiento de alta relavancia para la sociedad.Algo importante a tener en cuenta es la estructura de la noticia, la cula esta dividida en varias partes las cuales son:</p>
+                <br>
+                <p>¿Qué pasó?: Relata el suceso ocurrido, ya que es la parte mas importante de la noticia.</p>
+                <br>
+                <p>¿A quién le pasó?: Menciona los involucrados del acontecimineto y su participación en el mismo.</p>
+                <br>
+                <p>¿Cómo pasó?: Explica detalladamente los sucesos que ocurrieron en el evento en cuestión.</p>
+                <br>
+                <p>¿Cuándo pasó?: Menciona la fecha y la hora del evento.</p>
+                <br>
+                <p>¿Dónde pasó?: Nombra el lugar de los hechos.</p>
+                <br>
+                <p>¿Por qué o para qué ocurrió?: Explica los los motivos pára que ocurrieran los eventos relatados en la noticia.</p>
+                <br>
+                <center>
+                <img src="img/Reportero.png">    
+                </center>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>Articulo</h3>
+                <br>
+                <h3>
+                Vamos, hoy veremos que es el articulo.
+                </h3>
+                <br>
+                
+                <p>El artículo es la palabra que acompaña al sustantivo y siempre va delante de él. Es la palabra que funciona siempre como un determinante o identificador del sustantivo, esto es, señala si el sustantivo es conocido o no, e indica el género (femenino o masculino) y el número del sustantivo (singular o plural).</p>
+                <br>
+                <br>
+                <center>
+                <img src="img/art.jpg" width="" height="250">
+                    </center>
+                <br>
+                <h3>Los artículos se dividen en definidos (o determinantes) e indefinidos (o indeterminantes).<br><br></h3>
+                <h4> Definidos</h4>
+                <br><p>Los artículos definidos son aquellos que hablan de algo conocido y que se puedes identificar.<br><br>
+                el / la / los / las. Se utiliza cuando tanto el que habla como el que oye saben de qué persona, animal, cosa o lugar se está hablando.<br><br>
+                El coche azul está estropeado (tanto quien habla como quien escucha saben a qué coche se refiere).<br>
+                La persiana está bajada (al igual que en el caso anterior, tanto quien habla como quien escucha saben a qué persiana se refiere).
+                <br><br>
+                </p>
+                <center>
+                <img src="img/artt.jpg" width="450" height="320">
+                    </center>
+                <br><br>
+                <h4>
+                Indefinidos
+                </h4>
+                <br>
+                <p>
+                Los artículos indefinidos son aquellos que hablan de algo no conocido o que no se puede identificar.<br><br>
+                uno / una / unos / unas. Se utiliza cuando el que oye no conoce la persona, animal, cosa o lugar de la que se está hablando.<br><br>
+                Un coche azul está estropeado (quien oye no sabe a qué coche se refiere).<br>
+                Una persiana está bajada (al igual que en el caso anterior, quien oye no sabe a qué persiana se refiere).<br><br>
+                </p>
+
+                <center>
+                <img src="img/inde.JPG">
+                    <br><br>
+                    <h3>
+                    Ahora veamos unos ejemplos para comprender el tema :D <br><br>
+                    </h3>
+                </center>
+                <p>
+                    -Los mapas están colgados allí.<br><br>
+                    -Para Navidad le regalaré la muñeca que pidió.<br><br>
+                    -Las mañanas no son para mí.<br><br>
+                    -Tenemos que elegir una canción para entrar al salón.<br><br>
+                    -Quiero plantar un árbol en el jardín.<br><br>
+                    -Los alumnos organizaron un torneo de fútbol.<br><br>
+                    -Traje unas nueces para ponerle a la torta.<br><br>
+                    -En el examen de inglés me fue muy bien, la maestra apenas me hizo unas correcciones en la composición.<br><br>
+                    -Para mi cumpleaños pedí una bicicleta.<br><br>
+                    -Lo llevé hasta su casa porque no se sentía bien.<br><br>
+                </p>
+                <center>
+                <h3>
+                   Muy bien, ahora intenta escribir algunas frases con los articulos que quieras y muestraselas a tus compañeros.
+                    </h3>
+                    <img src="img/gg.gif" width="500" height="200">
+                    </center>       
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h2 style="text-align: center">LA CRONICA</h2><br>
+                <center><img src="img/cronica.jpg" alt="" width="420" height="340"></center><br>
+                <p>Cuando hablamos de la cronica, es un genero literario, es decir, un escrito de alguna manera, que tiene un enfoque literario y periodistico, esto quiere decir que no se vera presente nada relacionado con ficción o imaginario.</p><br>
+                <p>El fin de la cronica es dar la información de manera mas explicita, basandose en aspectos historicos en orden cronologico para incluir una mayor veracidad de lo que se expone. </p><br>
+                <center><img src="img/cronica2.jpg" alt="" width="420" height="340"></center><br>
+                <p>Se caracteriza por: <br><br>-los hechos que se narran según el orden temporal en que ocurrieron.<br>-A menudo por testigos presenciales o contemporáneos, ya sea en primera o en tercera persona.<br>-Se utiliza un lenguaje sencillo, directo, muy personal y admite un lenguaje literario con uso reiterativo de adjetivos para hacer énfasis en las descripciones.<br>-Emplea verbos de acción y presenta referencias de espacio y tiempo.</p><br>
+                <p>Hay distintas tipos de cronicas que son:</p>
+                <center><img src="img/cronica3.png" alt="" width="420" height="340"></center><br><br>
+                <h3>Los cronistas buscan describir los hechos relatados en la crónica de acuerdo con su propia visión crítica de los hecho</h3><br>
+            </div>
+            
+            <div id="tm6" class="tabcontent">
+                <h3>El debate</h3>
+                <br>
+                <h3>
+                Por ultimo veremos El Debate 
+                </h3><br>
+                <p>Debatir es discutir dos o más personas sobre uno o varios temas exponiendo sus ideas y defendiendo sus opiniones e intereses. El moderador será el encargado de dirigir y controlar el debate, de repartir  los tiempos y dar los turnos de palabra a cada oponente. Los participantes se agruparán según la postura que vayan a defender.</p>
+                <br>   
+                <center>
+                <img src="img/deb.jpg" width="500" height="300">
+                    </center>
+                <br>
+                <p>
+                Es la discusión de un tema de interés en el cual se exponen diferentes puntos de vista, es decir, cuando dos o más personas expresan opiniones opuestas en relación con un mismo tema.
+                <br><br>
+                En un debate se debe tener presente lo siguiente:</p>
+                <br><br>
+                <p>
+                -Debe haber un tema de interés común para los exponentes.<br>
+                -Las opiniones de los exponentes deben tener un sustento.<br>
+                -Al final, se debe llegar a una conclusión.</p><br>
+                <center>
+                <img src="img/kisspng-united-states-public-debate-argument-organization-speaking-5ac2b1e9a61376.8354400515227089696803.png" width="250" height="250"> 
+                    </center>
+                <br><br>
+                <h3>
+                Partes
+                </h3>
+                <br>
+                <p>Las partes principales de un debate son: La apertura, en la cual el moderador presenta la temática a tratar, Exposición:  Cuando los participantes exponen sus puntos de vista iniciales, Discusión: Cuando se lleva a cabo el intercambio de argumentos, Cierre: Donde se llega a una conclusión. <br><br>Recordemos que un debate consiste en una discusión organizada por dos o mas personas, en la cual éstas defienden o disputan ideas encontradas acerca de un determinado tema exponiendo sus distintos puntos de vista.
+                </p>
+                <br>
+                <center>
+                <img src="img/ninp.jpg" height="250">
+                    </center>
+                <br><br>
+                <center>
+                <h3>
+                Ahora aprenderas a crear tu propio debate.<br>
+                    Vamos a ensayar.
+                    </h3>
+                    <br><br>
+                </center>
+                <p>
+                En el caso de que se realice un debate para niños pequeños es esencial elegir un tema que sea atractivo y de interés para ellos. Se harán dos grupos de acuerdo a la postura que vayan a defender, se nombrará un moderador y el resto de los niños pueden hacer de público.<br><br>
+                - El niño o adulto que haga de moderador abrirá el debate  haciendo una breve exposición del tema sobre el que se va a debatir y las reglas que tendrán que seguir durante el mismo. Se trata de escuchar y aprender unos de otros.
+                <br><br>
+                - Levantarán la mano para pedir el turno de palabra y deberán esperar pacientemente hasta que el moderador indique que pueden  hablar. En ningún caso se admitirán burlas o insultos bajo pena de expulsión. 
+                <br><br>
+                - Con el debate buscaremos que los niños participen activamente para que poco a poco vayan desarrollando su sentido crítico. Fomentaremos el trabajo en equipo, el respeto y la disciplina. Dejaremos muy claro que se deben respetar todas las reglas que se hayan acordado al inicio del debate.
+                <br><br>
+                Por último, tener en cuenta, que siempre se aprende algo de un debate y debemos felicitar a nuestro oponente si resulta vencedor.
+                </p>
+                <center>
+                <img src="img/dis.jpg" width="250" height="250">
+                    </center>
+            </div>
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

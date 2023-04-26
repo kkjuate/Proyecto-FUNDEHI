@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>1.Lenguaje - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">LENGUAJE - PRIMERO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Las vocales</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Abecedario</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Los Sinonimos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Los Antonimos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">La Oracion</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Partes de la oración</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">Los Adjetivos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Los Verbos</button> 
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">La narracion</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm10')">Elementos de la narración</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <br>
+                <h2 style="text-align: center">Las vocales</h2>
+                <br>
+                <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/Canticuentos%20-%20Ronda%20De%20Las%20Vocales%20(Video%20Animado).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </center>
+                <br>
+                <p>Las vocales son importantes porque le dan sonidos a las palabras, por lo tanto, es muy importante que las conozcan desde muy pequeños, porque luego deben juntarse con "sus amigas" las consonantes y así iniciar el hermoso camino de leer y escribir, comenzando por las sílabas, palabras, frases y oraciones.</p><br>
+                <p>Las vocales son las siguientes:</p>
+                <br>
+                <center>
+                <img src="img/vocales.png" alt="" width="420" height="340">
+                </center>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h2>Abecedario.</h2><br>
+                    <h3>Ahora que ya sabemos que son las vocales. <br> Veremos que es el Abecedario.</h3>
+                <br>
+                <p>Conocer el abecedario es el primer gran paso para, más adelante, aprender a leer y escribir. <br>
+                El abecedario o alfabeto es un grupo de letras que tiene un orden. Las letras son una representación por escrito de los sonidos que el ser humano utiliza para comunicarse. <br>
+                </p> <br><br>
+                    <center><img src="img/abc.jpg"></center>
+                <br>
+                <p>El conjunto de vocales y consonantes es lo que llamamos el abecedario y, con él, podemos escribir y expresar oralmente todas las palabras de nuestro idioma. </p><br>
+                <p>Ahora veamos un video para aprender el ABECEDARIO con nuestro amigo Jorge el Curioso.
+                </p><br>
+                <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20Aprender%20El%20Abecedario%20con%20Jorge%20el%20Curioso%20-%20Video%20Educativo_480p.mp4">   
+                </video>
+                </center>
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h2>Sinonimos.</h2>
+                <br>
+                <h3>Ahora que ya sabemos que es el abecedario. <br> Veremos que son los Sinonimos.</h3>
+                <br>
+                <p>Llamaremos sinónimo a aquellas palabras que tienen un significado igual o muy similar, pero que se escriben de manera diferente.<br><br>
+                <h3>AHORA VEREMOS UNOS EJEMPLOS DE SINONIMOS.</h3>
+                <p><br>
+                    <center><img src="img/sino.jpg"></center>
+                    <br>
+                    <p>Los sinónimos son palabras diferentes pero que tienen el mismo significado o uno muy parecido. Son palabras diferentes pero significan prácticamente lo mismo. <br></p>
+                     <p><br>
+                Ahora veamos un video que nos explica que son los sustantivos.
+                </p>
+                <br>
+                    <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20LOS%20SIN%C3%93NIMOS%20PARA%20NI%C3%91OS%20_%202018_480p.mp4">   
+                </video>
+                    </center>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>Antonimos.</h3>
+                <br>
+                <h3>Ahora que ya sabemos que son los sustantivos.<br> Veremos que son los Antonimos.</h3>
+                <br>
+                <p>Los antónimos son palabras que tienen el significado contrario. Por eso diremos que son palabras que significan justamente lo opuesto. <br></p><br>
+                <center><img src="img/anto.jpg"></center>
+                <br>
+                <p>Los antónimos son aquellas palabras cuyos significados son opuestos entre sí. Por ejemplo: luz – oscuridad. Las palabras antónimas pueden ser sustantivos. <br>(comienzo – final), adjetivos (limpio – sucio), verbos (comprar – vender) o adverbios (rápido – lento).
+                </p><br>
+                <p>Ahora veamos un video que nos explica que son los antonimos.</p>
+                <br>
+                <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20%C2%BFQu%C3%A9%20son%20los%20ANT%C3%93NIMOS_%20%20%F0%9F%92%AF%20%20para%20ni%C3%B1os%20primaria%20%20%E2%9C%94%20%5BSin%C3%B3nimos%20y%20ant%C3%B3nimos%5DLos%20Ant%C3%B3nimos%20para%20ni%C3%B1os_480p.mp4">
+                    
+                </video>
+                    </center>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+               <h3>Oracion</h3>
+                <br>
+                <h3>Ahora que ya sabemos que son los sustantivos y antonimos. <br> Veremos que es la Oracion.</h3>
+                <br>
+                <p>La oración es un conjunto de palabras ordenadas que tiene un significado completo. <br>
+                Las oraciones siempre llevan un verbo. El verbo es la palabra que indica la acción que se realiza.
+                <br><br>
+                    <center> <img src="img/orac.jpg" width="400px" height="400px"></center>
+                    <br>
+                <p>Ahora veamos un video que nos explica que es la oracion.</p>
+                <br>
+                <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20La%20oraci%C3%B3n%20y%20sus%20partes%20(Primer%20grado)_480p.mp4">     
+                </video>
+                    </center>
+            </div>
+ 
+            <div id="tm6" class="tabcontent" style="text-align: center">
+                <h2>Partes de la oración </h2><br>
+                <p>Como vimos en el tema anterior, aqui veremos las partes de la oracion, esto es importante, porque entendiendo esto, vas a poder escribir tus primeras frases.</p><p>La oracion esta compuesta por: </p> <br>
+                <img src="img/partesoracion.png" alt="" width="420" height="340"> <br>
+                <p>El sujeto es la persona, animal u objeto que se encarga de realizar la acción, un ejemplo de sujetos son los siguientes: unos niños, una vaca o un lapiz</p><br>
+                <img src="img/ni%C3%B1os.png" alt="" width="200" height="200">
+                <img src="img/vaca.png" alt="" width="200" height="200">
+                <img src="img/lapiz.png" alt="" width="200" height="200"><br><br>
+                <p>El verbo, son las acciones que hace el sujeto, por ejemplo: correr, bailar, comer, entre otros</p> <br>
+                <img src="img/ni%C3%B1ocorriendo.png" alt="" width="200" height="200"><br><br>
+                <p>Y el predicado es lo que completara tus oraciones</p><br> <br>
+                <p>Por ejemplo:</p><br><p>El niño esta nadando en la piscina</p><br>
+                <img src="img/ni%C3%B1onada.png" alt="" width="200" height="200"><br><br>
+                <p>El sujeto es "el niño", el verbo es "nadar" y el predicado es "en la piscina</p><br><br>
+                <p>Ahora te invito a que escribas en tu cuaderno tus primeras oraciones</p><br><br><br>
+            </div>
+            
+            <div id="tm7" class="tabcontent">
+                <h3>Adjetivos.</h3>
+                <br>
+                <h3>Ahora que ya sabemos que es una oracion. <br> Veremos que son los adjetivos.</h3>
+                <br>
+                <p>Los adjetivos son las palabras que complementan al sustantivo, lo acompañan y proporcionan información de éste, como sus propiedades y características. Cualquier particularidad que podamos decir sobre un sustantivo, será un adjetivo. <br>
+                </p>
+                <br>
+                <center> <img src="img/adje.jpg"></center>
+                <br>
+                <p>
+                El adjetivo es la palabra que acompaña al sustantivo para complementarlo y expresar una de sus cualidades concordando en género y número, es decir, las palabras que nos dicen cómo es una persona, animal o cosa.
+                    <br>
+                    <br>
+                </p>
+                <p>
+                Ahora veamos un video que nos explica que es un adjetivo.
+                </p>
+                <br>
+                <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20Los%20adjetivos%20%C2%BFQu%C3%A9%20son__480p.mp4">
+                    
+                </video>
+                    </center>
+            </div>
+            
+            <div id="tm8" class="tabcontent">
+                <h3>Verbos.</h3>
+                <br>
+                <h3>Ahora que ya sabemos que un adjetivo. <br> Veremos que son los verbos.</h3>
+                <br>
+                <p>Los verbos son las palabras que indican la acción que realizan o el estado en el que están las personas, los animales, las plantas o las cosas.</p>
+                <br>
+                <center>
+                <img src="img/ver.jpg">
+                </center>
+                <p>
+                Cada verbo tiene distintas formas verbales. <br>
+                Las formas verbales se componen de una raíz y de una o varias desinencias.
+                <br><br>
+                La raíz es la parte común de todas las formas del verbo.
+                <br><br>
+                Las desinencias son las terminaciones que van después de la raíz y dan información sobre la persona, el número, el tiempo y el modo del verbo. Ejemplo: Nosotros salt– amos.
+                <br><br>
+                Las desinencias expresan la persona (primera, segunda o tercera) y el número (singular o plural) de quien realiza la acción. Ejemplo: Yo bail–o -> primera persona del singular.
+                <br>
+                </p>
+                <br>
+                <p>
+                Ahora veamos un video que nos explica que es un verbo.
+                </p>
+                <br>
+                 <center>
+                <video width="320" height="240" controls>
+                    <source src="videos/y2mate.com%20-%20%C2%BFQu%C3%A9%20es%20un%20Verbo_%20_%20Videos%20Educativos%20para%20Ni%C3%B1os_480p.mp4"> 
+                </video>
+                    </center>
+            </div>
+            
+            <div id="tm9" class="tabcontent" style="text-align: center">
+                <h2>La narración</h2><br><br>
+                <img src="img/ni%C3%B1oleye.png" alt="" width="420" height="340"> <br><br>
+                <p>La narración es la manera de escribir o contar un historia ya sea real o escrita, donde hay un narrador, quien cuenta la historia, personajes, acciones, un tiempo en que sucede la historia</p><p>A continuacion, te dejamos una pequeña narracion de un cuento: </p>
+                <video width="320" height="240" controls>
+                    <source src="videos/Cuento%20Infantil%20SARITA,%20LA%20RANA%20SALTARINA%20-%20Cuentos%20Infantiles%20Cortos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div id="tm10" class="tabcontent" style="text-align: center">
+                <h2>Elementos de la narración</h2> <br><br>
+                <p>La narracion esta compuesta por:</p><br>
+                <p><b>Narrador:</b> Quien cuenta la historia</p>
+                <img src="img/narrador.png" alt="" width="200" height="200"><br><br>
+                <p><b>Personajes:</b> Quienes participan en la historia</p>
+                <img src="img/personajes.png" alt="" width="200" height="200"><br><br>
+                <p><b>Acciones:</b> Los hechos que suceden durante la historia</p>
+                <img src="img/acciones.png" alt="" width="200" height="200"><br><br>
+                <p><b>Espacio:</b> Es el lugar donde ocurre la historia</p>
+                <img src="img/lugar.png" alt="" width="200" height="200"><br><br>
+                <p><b>Tiempo:</b> Es el momento en que sucede la historia</p>
+                <img src="img/tiempo.png" alt="" width="200" height="200"><br><br>
+                <p><b>Trama:</b> Es la historia en si, como la que vimos en el anterior tema, la historia ya completa</p>
+            </div>
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

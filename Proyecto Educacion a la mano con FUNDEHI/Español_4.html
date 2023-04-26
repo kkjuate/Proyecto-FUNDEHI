@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>4.Lenguaje - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">LENGUAJE - CUARTO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Texto informativo</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">El radio y la televisión</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Lectura de una imagen</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Mitos y leyendas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">La fabula</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">La exposición</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">La acentuación</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Señales de transito</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">El periodico</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm10')">El uso de la G y J</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h2 style="text-align: center">El TEXTO INFORMATIVO</h2><br>
+                <p>El texto informativo tiene un unico fin, y es el de transmitir algun tipo de información, por que su función es informar, de manera que dentro del texto expuesto el lector puede comprender la situacion y los detalles que se explican en el texto</p><br>
+                <center><img src="img/textinformativo.png" alt="" width="420" height="340"></center><br>
+                <p>El texto informativo debe ser preciso, coherente, directo y ordenado, para que el lector pueda realizar una buena comprensión de la información expuesta</p><br>
+                <h3 style="text-align: center"><b>Tipos de textos informativos</b></h3><br>
+                <p>Existen 4 tipos de textos informativos que son:</p><br>
+                <p><b>1. La noticia: </b>Es una pequeña descripción de un suceso reciente</p>
+                    <center><img src="img/noticiastext.png" alt="" width="420" height="340"></center><br>
+                <p><b>2.Carta formal: </b>Este tipo de texto, es algo mas serio, mayormente se utiliza en las empresas, o similares, o para pedir algo tipo de permiso</p>
+                    <center><img src="img/cartaformal.png" alt="" width="420" height="340"></center><br>
+                <p><b>3. Memorando: </b>Es un tipo de carta mas corta que una formal, pero su lenguaje si va a ser coherente</p>
+                    <center><img src="img/memorando.png" alt="" width="420" height="340"></center><br>
+                <p><b>4. Informe: </b>Es un tipo de texto muy utilizado en disciplinas científicas, investigaciones o para describir la situación de una empresa.</p>
+                    <center><img src="img/informe.png" alt="" width="420" height="340"></center><br>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h2 style="text-align: center">LA RADIO Y LA TELEVISIÓN</h2><br>
+                <p>La radio y la televisión son conocidos como medios de comunicación</p><br>
+                <p><b>La radio: </b>Es un medio de comunicación en el que se puede escuchar distintos tipos de contenidos, ya sea musica, noticias, entretenimiento, etc. Es uno de los mas antiguos medios de comunicación.</p><br>
+                    <center><img src="img/radio.png" alt="" width="420" height="340"></center><br>
+                <p>La carateristicas de la radio son "La palabra hablada, la musica, los efectos sonoros y los silencios</p><br><br>
+                <p><b>La televisión: </b>Es un medio de comunicación que transmite imagenes y sonido, tiene las mismas funciones que la radio, solo que en este tiene la parte extra que es el poder ver a traves de la pantalla.</p><br>
+                    <center><img src="img/tv.png" alt="" width="420" height="340"></center><br>
+                <p>Es actualmente uno de las populares e indispensable para muchos, ya que maneja un lenguaje audivisual.</p><br>
+                <p>Dentro de la televisión tambien se puede encontrar distintos tipos de contenidos.</p><br>
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h2 style="text-align: center">LECTURA DE UNA IMAGEN</h2><br>
+                <p>Esto es un tema bastante importante y a la vez interesante, la mayor parte de nuestro tiempo, de una u otra manera estamos leyendo imagenes y lo que vemos. ¿Pero como es esto posible? Adelante vamos a aprender como funciona esto: </p> <br>
+                    <center><img src="img/imagenleida.jpg" alt="" width="420" height="340"></center><br>
+                <p>Es bastante sencillo, la lectura de una imagen es el simple hecho de relacionar lo que vemos para darle un significado al contexto y entender que es lo que esta sucediendo.</p><br>
+                <p>Vamos a observar la siguiente imagen, y vamos a llegar a una pequeña conclusion de que estamos leyendo en ella:</p><br>
+                    <center><img src="img/depositphotos_207247778-stock-photo-focused-little-kids-doing-homework.jpg" alt="" width="420" height="340"></center><br>
+                <p>Antes de seguir, ¿Que es lo que tu ves en la imagen? Anotalo en tu cuaderno, antes de que sigas bajando</p><br>
+                    <center><img src="img/thinking.jpg" alt="" width="420" height="340"></center><br>
+                <p>Ahora si, despues de que hayas escrito lo que tu ves que esta sucediendo en la imagen, te vamos a dar unos pasos que te pueden servir para aprender a leer una imagen e incluso lo que tu estas viendo.</p><br>
+                <p>Primero mira en que lugar esta la imagen, si es un parque o una casa o un bosque, identifica el lugar, por ejemplo en la imagen anterior el lugar podria ser una cocina o un comedor, ya que son bastante similares.</p><br>
+                <p>Luego mira que sujetos estan actuando dentro de la imagen, si son niños o adultos, o si son animales, o es un objeto, identifica los sujetos, en nuestro ejemplo, son dos niños.</p><br><p>Luego mira cuales son las acciones que estan realizando, si correr, dormir, caminar, mirar, nadar, etc. En nuestro caso los niños estan escribiendo. </p><br>
+                    <center><img src="img/ver.jpg" alt="" width="420" height="340"></center><br>
+                <p>Estas son algunas de las cosas mas importantes al tener en cuenta al momento de leer una imagen, ya que hay muchas maneras.</p><br>
+                <p>¿Pero a que conclusion llegamos? No se cual habra sido la tuya, pero en nuestro caso, vemos que hay dos niños que estan haciendo sus tareas del colegio en el comedor de su casa</p><br>
+                <p>¿Cual fue la tuya?</p><br>
+                    <h3 style="text-align: center">ACTIVIDAD</h3><br><br>
+                <p><b>Te invito a que mires las siguientes imagenes y escribas en tu cuaderno que es lo que lees en ellas, teniendo en cuenta los consejos anteriores:</b></p><br>
+                    <center><img src="img/leerimagen1.jpg" alt="" width="300" height="200"></center><br>
+                    <center><img src="img/leerimagen2.jpg" alt="" width="300" height="200"></center><br>
+                    <center><img src="img/leerimagen3.jpg" alt="" width="300" height="200"></center><br>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h2 style="text-align: center">MITOS Y LEYENDAS</h2><br>
+                <center><img src="img/dragon.png" alt="" width="450" height="340"></center><br>
+                <h3><b>¿Que son los mitos?</b></h3>
+                <p>Son relatos que tratan sobre seres sobrenaturales, como por ejemplo dioses o monstruos.</p><br>
+                <center><img src="img/mito2.jpg" alt="" width="420" height="340"></center><br>
+                <p>En estos relatos, estan creados para explicar fenomenos, por lo que mayormente se ubican antes de que la humanidad apareciera.</p><br>
+                <p>Esto quiere decir que son relatos mas fantasticos e incluso no pareciera que fueran reales, por ejemplo, que como fue que por ejemplo se creo el sol o como un dios griego peleo con un titan y se formo las montañas, estos son ejemplos.</p>
+                <center><img src="img/mito3.png" alt="" width="420" height="340"></center><br>
+                <p>Los mitos se han transmitido de generación en generación de manera oral.</p><br>
+                <p>Te invito a que escuches el siguiente audio de un mito de la odisea: </p><br>
+                <center><img src="img/ulises.gif" alt="" width="420" height="340"></center><br>
+                <center><audio controls>
+                    <source src="videos/mitos%20cortos%20para%20ni%C3%B1os%20-%20La%20Odisea%20Animaci%C3%B3n.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio></center><br><br>
+                <h3><b>¿Que son las leyendas?</b></h3>
+                <p>Las leyendas son relatos de cosas o sucesos imaginarios que se crean con el fin de explicar algún momento historico.</p><br>
+                <center><img src="img/leyenda.jpg" alt="" width="420" height="340"></center><br>
+                <p>A diferencia de los mitos, estos intentan ser basados en algo real.</p><br>
+                <p>Al igual que los mitos, tambien son transmitidos de manera oral a través de las generaciones</p><br>
+                <p>Hay distintos tipos de leyendas como lo son las historicas, urbanas, locales, rurales, entre otras.</p><br>
+                <p>Te invito a que escuche el siguiente audio con la leyenda de la llorona: </p><br>
+                <center><img src="img/llorona.gif" alt="" width="420" height="340"></center><br>
+                <center><audio controls>
+                    <source src="videos/LA%20LLORONA%20-%20Draw%20My%20Life.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio></center><br><br>
+                <p><b>Recuerda que los mitos y las leyendas no son siempre reales, y siempre se transmiten de manera oral</b></p> <br>
+                <center><img src="img/abuelo.jpg" alt="" width="420" height="340"></center><br>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h2 style="text-align: center">LA FABULA</h2><br>
+                <center><img src="img/fabula.jpg" alt="" width="420" height="340"></center><br>
+                <p>La fábula es un tema bastante sencillo de enteder, porque la fábula es simplemente un historia que se escribe en varios versos y que al final siempre dejan una moraleja o enseñanza.</p><br>
+                <center><img src="img/venado.png" alt="" width="420" height="340"></center><br>
+                <p>Una caracteristica de las fabulas es que mayormente son protagonizadas por animales, aunque no siempre.</p><br>
+                <center><img src="img/images.jpg" alt="" width="420" height="340"></center><br>
+                <p><b>Ahora te invito a que veas el siguiente video de una fabula, y que anotes en tu cuaderno la moraleja o enseñanza que te dejo: </b></p><br><center>
+                <video width="320" height="240" controls>
+                    <source src="videos/videoplayback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br></center>
+            </div> 
+            
+            <div id="tm6" class="tabcontent">
+                <h2 style="text-align: center">LA EXPOSICIÓN</h2><br>
+                <center><img src="img/exposicion.jpg" alt="" width="420" height="340"></center><br>
+                <p>La exposición en la manera de presentar un tema cualquiera, con el fin de explicarlo a traves de ideas principales, para que los oyentes, puedan comprenderlo totalmente.</p><br>
+                <center><img src="img/ni%C3%B1otablero.jpg" alt="" width="420" height="340"></center><br>
+                <p>Algo que debes aprender es que una exposición NO ES LEER, sino que expliques con tus propias palabras el tema</p><br>
+                <center><img src="img/expo.png" alt="" width="420" height="340"></center><br>
+                <p>De esta manera no te aburriras tu ni tampoco al publico si expones tus ideas, pero no lees, algo que si puedes tener es una fichas bibliograficas en tu mano, con ideas principales, cosa que tu leas mentalmente y sepas que es lo que debes hablar, eso te ayudara muchisimo, además que te servira para que desarrolles el poder hablar en publico de manera adecuada y sin miedo.</p><br>
+                <p><b>Partes de una exposición</b></p><br>
+                <p><b>Introduccion: </b>Es algo breve y sencillo, donde te presentas, presentas el tema del que vas a hablar y una pequeña sintesis de lo que expondras para que los receptores tengan idea de lo que explicaras.</p><br>
+                <p><b>Desarrollo: </b>Es la parte mas importante de la exposición, donde tu hablaras sobre tu tema, diras lo mas importante de manera clara y dar la mayor información posible en un tiempo prudente, pero procura NO leer.</p><br>
+                <p><b>Conclusión: </b>Para finalizar, haces un breve resumen de tu tema, y una conclusión general y agradeces y te despides</p><br>
+                <center><img src="img/expo2.png" alt="" width="420" height="340"></center><br>
+            </div> 
+            
+            <div id="tm7" class="tabcontent">
+                <h2 style="text-align: center">LA ACENTUACION</h2><br><br>
+                <p>Cuando hablamos del acento, es aquella parte de la pronunciación llamada sílaba de una palabra donde hay una mayor fuerza de pronunciación al momento de decirla en comparación al resto de silabas que la acompañan</p><br>
+                <p>Esto te permitira que aprendas a hablar de la manera correcta pronunciando las palabras como se debe.</p><br>
+                <p>Cabe aclarar que no siempre se hara la presencia de la tilde, esto depende de la palabra.</p><br>
+                <h3>Clases de acentuación:</h3><br>
+                <p><b>Agudas: </b>Son las que llevan el acento en la ULTIMA sílaba.</p><br>
+                <p><b>Graves: </b>También conocidas como palabras llanas, son las que lllevan el acento en la PENULTIMA sílaba</p><br>
+                <p><b>Esdrújulas: </b>Son las que llevan el acento en la ANTEPENULTIMA sílaba</p><br>
+                <p><b>Sobreesdrújulas: </b>Son las palabras que llevan el acento en LA ANTERIOR a la antepenultima sílaba</p><br>
+                <p>Pero esto no es asi de sencillo, hay ciertas reglas que se deben cumplir, por lo que te invito a que veas el siguiente video, donde explican muy bien, para que puedas aprender a utilizar la acentuación:</p><br>
+                <center><video width="320" height="240" controls>
+                    <source src="videos/acentuacion.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br></center>
+            </div>           
+            
+            <div id="tm8" class="tabcontent">
+                <h2 style="text-align: center">SEÑALES DE TRANSITO</h2><br><br>
+                <center><img src="img/se%C3%B1al.jpg" alt="" width="420" height="340"></center><br>
+                <p>Todos en algun momento de nuestra vida hemos visto diferentes tipos de señales de transito, y puede que algunas las entendamos pero otras no, es por dicha razon, que te mostrare los 3 tipos de señales de transito mas comunes e importantes que te puedes encontrar: </p><br>
+                <h3>Informativas:</h3><br>
+                <p>Son las que proporcionan información, sobre servicios y lugares proximos a encontrar, y se caracterizan por tener fondo azul con texto blanco y simbolos negros.</p>
+                <center><img src="img/se%C3%B1al1.jpg" alt="" width="450" height="700"></center><br>      
+                <h3>Reglamentarias:</h3><br>
+                <p>Su función es mostrar los limites y prohibiciones que pueden haber por el camino, incumplirlas conlleva multas o castigos mayores. Son las que tiene simbolos geometricos con borde rojo, fondo blanco y letra negra</p>
+                <center><img src="img/se%C3%B1al2.jpg" alt="" width="450" height="700"></center><br>
+                <h3>Preventivas:</h3><br>
+                <p>Estas se encargan de mostrar o señalar ciertos riesgos o alguna observación a tener en cuenta en el camino. Son las que tiene dondo amarillo y letras negras.</p>
+                <center><img src="img/se%C3%B1al3.png" alt="" width="450" height="700"></center><br>
+                <p><b>Hay mas tipos de señales de transito, pero las anteriormente mencionadas son las que todos como personas debemos conocer y tener claras.</b></p>
+            </div>          
+            
+            <div id="tm9" class="tabcontent">
+                <h2 style="text-align: center">EL PERIODICO</h2><br><br>
+                <center><img src="img/periodico.jpg" alt="" width="420" height="340"></center><br>
+                <p>El periodico es uno de los medios de comunicación y de información mas antiguos que existen, pero que aun siguen siendo importantes a día de hoy, en otros paises, se conoce como el diario.</p><br>
+                <p>Toda la información brindada en el periodico es de tipo texto incluyendo imagenes.</p>
+                <center><img src="img/peri2.jpg" alt="" width="420" height="340"></center><br>
+                <p>Generalmente incluye muchas secciones, como noticias, deportes, entretenimiento, economia, historietas, y muchas mas, esto ya depende de la tematica del periodico que se este leyendo, por ejemplo: El Tiempo, El Espectador, El país, etc, estos son algunos que se encuentran aqui en Colombia, pero hay muchisimos más.</p><br>
+                <center><img src="img/peri3.jpg" alt="" width="420" height="340"></center><br>
+                <p>Otra cosa importante a destacar, es que actualmente con todo de la era tecnologica, podemos encontrar los periodicos de manera digital, es decir que el periodico a evolucionado y no solamente es fisico.</p><br>
+                <center><img src="img/peri4.jpg" alt="" width="420" height="340"></center><br>
+            </div>          
+            
+            <div id="tm10" class="tabcontent">
+                <h2 style="text-align: center">EL USO DE LA G Y LA J</h2><br><br>
+                <p>¿Porque es necesario ver este tema? Resulta que muchas personas confunden el uso al momento de escibir una palabra con la G y la J, debido a que pueden tener ciertas similitudes en la forma de pronunciarse. Es por ello que a continuación, te vamos a dar las reglas para que sepas cuando se usa la G y cuando la J. Vamos puede que sea un tema mas teorico que cualquier cosa, pero es necesario que lo aprendas.</p><br>
+                <center><img src="img/g.jpg" alt="" width="420" height="340"></center><br>
+                <h3>¿Cuales son las reglas de la G?</h3><br>
+                <p><b>El prefijo GEO- </b>de las palabras compuestas, por ejemplo: </p><br>
+                <center><img src="img/g1.png" alt="" width="420" height="340"></center><br>
+                <p>La terminación <b>-GEN</b> de los nombres, por ejemplo: </p><br>
+                <center><img src="img/g2.png" alt="" width="420" height="340"></center><br>
+                <p>Las terminaciones <b>-GÉLICO, -GENARIO, -GÉNEO, -GÉNICO, -GENIO, -GÉNITO, -GESIMAL, -GÉSIMO, -GÉTICO</b> y en sus femeninos y plurales, por ejemplo: </p><br>
+                <center><img src="img/g3.png" alt="" width="420" height="340"></center><br>
+                <p>La terminaciones <b>-GIA, -GIO, -GIÓN, -GIONAL, -GIONARIO, -GIOSO Y -GÍRICO</b>, por ejemplo: </p><br>
+                <center><img src="img/g4.png" alt="" width="420" height="340"></center><br>
+                <p>La terminaciones <b>-GER Y -GIR</b> en sus infinitivos, exceptuando las palabras tejer y crujir con los derivados de este, por ejemplo: </p><br>
+                <center><img src="img/g5.png" alt="" width="420" height="340"></center><br>
+                <p>Algo importante a añadir, es que como la pronunciación de la G con la E y la I es fuerte e algunas palabras donde es mas suave, es necesario colocar una U intermedia como por ejemplo GUERRA, GUISO, etc.</p><br><br>
+                <center><img src="img/j.png" alt="" width="420" height="340"></center><br>
+                <h3>¿Cuales son las reglas de la J?</h3><br>
+                <p>La terminación en <b>-JERÍA</b>, por ejemplo: </p><br>
+                <center><img src="img/J1.PNG" alt="" width="420" height="340"></center><br>
+                <p>Otra regla es cuando el verbo infinitivo en su forma de tiempo, incluye la <b>J</b>, por ejemplo: </p><br>
+                <center><img src="img/j2.PNG" alt="" width="420" height="340"></center><br>
+                <p>Aquellas palabras que se derivan de otras donde hay una <b>J</b>, por ejemplo: </p><br>
+                <center><img src="img/j3.PNG" alt="" width="420" height="340"></center><br>
+                <p>Y por ultimo, aquellas en que las formas verbales con sonido <b>JE, JI</b>, si los infinitivos correspondientes no llevan ni <b> G ni J</b>, por ejemplo: </p><br>
+                <center><img src="img/j4.PNG" alt="" width="420" height="340"></center><br>
+                <br>
+                <center><img src="img/terminar4.PNG" alt="" width="420" height="340"></center><br>
+            </div>          
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

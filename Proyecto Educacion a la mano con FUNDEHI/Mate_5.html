@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>5.Matematicas - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">MATEMATICAS - QUINTO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Suma y resta de decimales</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Plano cartesiano</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Conversión de medida</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Operaciones combinadas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Potencia de un Producto</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Expresiones Algebraicas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">Propiedades de Radicación</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Los Monomios</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">Los Polinomiosn</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Suma y Resta de decimales</h3>
+                <p>Para sumar y resta con decimales primero debemos tener en cuenta la posición en la que deben ubicarse los números, que las unidades que estan antes de la coma se ubican de un lado y las que esta despues van del otro.</p>
+                <br>
+                <img src="img/suma%20decimales.png">
+                <br>
+                <p>Ahora, ya que sabemos como ubicar los números decimales para una operación, se realiza la suma(o la resta segun como de necesita) de manera normal.</p>
+                <br>
+                <center>
+                <img src="img/resultado%20decimales.png">
+                </center>
+                <p>Para la resta se debe ubicar de la misma forma y realizar la resta comun y corriente.</p>
+                <br>
+                <center>
+                <img src="img/Resta%20decimales.png">
+                </center>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Plano catesiano</h3>
+                <p>El plano cartesiano es como un mapa  formado por dos rectas numéricas llamadas ejes. Estos ejes se intersecan  o se cruzan formando un ángulo recto (90 grados). 
+Los ejes son:  eje de las x  y el eje de las y.  Los ejes dividen el plano en cuarto partes llamadas cuadrantes.</p>
+                <br>
+                <img src="img/plano%20cartesiano.png">
+                <br>
+                <p>El plano cartesiano se utiliza para ubicar un punto con unas coordenadas, por ejemplo si quiero encontrar el punto 2.3 en el plano debo buscar la ubicación 2 en el eje x y la ubicación 3 en el eje y, como se muestra en la siguente imagen.</p>
+                <br>
+                <img src="img/ubicacion%20plano.png">
+                <br>
+                <p>En el plano cartesiano tambien se pueden utilizar números negativos como por ejemplo -3.0. esto indica que en el eje x se movera 3 espacios hacia la izquierda y ninguno en y.</p>
+                <br>
+                <img src="img/negativo%20plano.png">
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Conversión de medidas de longitud</h3>
+                <p>La conversión de las medidas de longitud sirven para conocer la distancia de dos elementos en diferentes tipos de medidas, es decir, se puede saber cuantos centimetros ahy en un kilometro o cuantos metros tiene un decametro.</p>
+                <br>
+                <img src="img/distancia%20bici.png">
+                <br>
+                <p>Tambien se debe tener en cuenta como esta ordenada las medidas de longitud.</p>
+                <br>
+                <center>
+                <img src="img/escala%20medidas.png">
+                </center>
+                <p>Con esta información ya se puede convertir las medidas de logitud, entonces si 100 centimetros equivale a 1 metro ¿cuantos metros equivalen 550 centimetros?. Para esto se utiliza la regla de tres.</p>
+                <br>
+                <img src="img/regla%20de%20tres.png">
+                <p>la regla de tres es multiplicar el valor que se quiere convertir por el valor de la medida a convertir y luego dividirlo por el valor equivalente, es decir, se multiplicaria 550 cm por 1 metro y se dividiria por 100 cm y asi se obtendria el valor en metros de los 550 cm.</p>
+                <p>el resultado de esta conversión es de 5.5 metros.</p>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h2 style="text-align: center">OPERACIONES COMBINADAS</h2><br>
+                <center><img src="img/operacionecombinada1.PNG" alt="" width="420"></center><br>
+                <h3>¿Qué son?</h3>
+                <p>Cuando nos referimos a operaciones combinadas, son aquellos ejercicios donde ves mas de una operación aritmética distinta, por ejemplo como se ve en la imagen anterior, donde hay suma, resta y multiplicación.</p><br>
+                <p>De esta manera, las operaciones combinadas como su mismo nombre lo indica, es la combinación de todas aquellas operaciones que tu sabes hacer en una misma.</p><br>
+                <h3>Pero ¿Como se resuelven?</h3>
+                <p>Aqui te voy a explicar lo básico para que sepas resolverlas, ya que hay unas reglas o pasos que siempre debes seguir para realizarlas de la manera correcta, asi que, aqui vamos: </p><br>
+                <center><img src="img/learn-3701963_640.jpg" alt="" width="420" height="340"></center><br><br>
+                <h2>Debes resolver primero lo que se encuentre dentro de los parentesis, y asi eliminar los parentesis</h2><br>
+                <center><img src="img/operacionecombinada2.PNG" alt="" width="420"></center><br>
+                <h2>Luego resuelve las multiplicaciones y las divisiones que existan dentro del ejercicio</h2><br>
+                <center><img src="img/operacionecombinada3.PNG" alt="" width="420"></center><br>
+                <h2>Y por ultimo las sumas y restas que queden</h2><br>
+                <center><img src="img/operacionecombinada4.PNG" alt="" width="420"></center><br>
+                <h2>Y listo asi es como se resuelven las operaciones combinadas.</h2><br>
+                <p>Aqui te dejo algunos tips, que debes tener en cuenta: <br><br>
+                    - Siempre se empieza por los parentesis, en caso de que existan un parentesis dentro de otro parentesis, debes resolver el parentesis de mas adentro.<br>
+                    - Si dentro de un parentesis hay mas de una operación sigues la regla de resolver dentro del parentesis primero realizas las multiplicaciones y divisione y luego las sumas y restas.<br>
+                    - Recuerda que es sencillo, solo es que te memorices los pasos y lo hagas despacio, y veras que te quedara super bien.
+                </p><br>
+                <p>Te dejo el siguiente ejercicio, resuelvelo en tu cuaderno, y tienes que llegar al resultado que esta al final de la imagen: </p><br>
+                <center><img src="img/operacionecombinada5.PNG" alt="" width="420"></center><br>
+                <p>¿Lo lograste? Te debio quedar algo asi: </p><br>
+                <center><img src="img/operacionecombinada6.PNG" alt="" width="420"></center><br>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h2 style="text-align: center">POTENCIA DE UN PRODUCTO</h2><br>
+                <h2>¿Qué es?</h2>
+                <p>La potencia de un producto es una de una propiedad, Es muy sencillo de resolver, simplemente debes cumplir con la siguiente formula: </p><br>
+                <center><img src="img/potenciaproducto1.PNG" alt="" width="420"></center><br>
+                <p>Esto quiere decir que si encuentras una multiplicación de la primera manera, es decir entre parentesis, para resolverla, basta con que lo separes y apliques el mismo exponete para cada numero, luego resuelves la potencia de cada número, y ahi si realizas la multiplicación normal.</p><br>
+                <p>Ejemplo: </p><br>
+                <center><img src="img/potenciaproducto2.PNG" alt="" width="420"></center><br>
+            </div>
+
+            <div id="tm6" class="tabcontent">
+<h3>Expresiones Algebraicas</h3>
+                <br><br>
+                <h3>
+                Término Algebraico</h3><br><br>
+                <p>Es la unidad mínima de una expresión algebraica; sus elementos son:
+<br>
+-Coeficiente<br>
+-Parte literal<br>
+-Exponentes<br>
+-Variables</p><br><br>
+                <h3>
+                Expresión Algebraica (E. A.)
+                </h3>
+                <br><br>
+                <p>
+                Es un conjunto de términos algebraicos unidos por operaciones de adición, sustracción, multiplicación, división, potenciación y radicación.
+<br><br>
+Ejemplo:
+<br><br>
+–13x7y5 + 8x3y – 14x5 Hay 3 términos algebraicos:
+<br>
+–13x7y5<br>
++ 8x3y<br>
+–14x5<br>
+Sus coeficientes son: –13; 8; –14 Sus variables son: x, y
+                </p>
+                <br><br>
+                <h3>
+                Construcción de un Término Algebraico
+                </h3>
+                <br><br>
+                <p>
+                Debemos tener en cuenta el siguiente orden:
+<br><br>
+El coeficiente es un número que va delante de las variables.
+La parte literal son las variables con sus respectivos exponentes.
+Ejemplo:
+<br><br>
+Construyamos un término algebraico cuyo coeficiente sea 5, sus variables «a» y «b» y sus exponentes 6 y 4 respectivamente.
+<br><br>
+Resolución:
+<br><br>
+Coeficiente 5<br>
+Variables a, b<br>
+Exponentes 6, 4<br>
+Al decir respectivamente: 6 es exponente de «a» y 4 de «b».<br>
+Parte literal a6b4<br>
+∴ El término algebraico es 5a6b4.</p>
+                <img src="img/fra.jpg" width="600">
+            </div>
+
+            <div id="tm7" class="tabcontent">
+                <h2 style="text-align: center">PROPIEDADES DE LA RADICACIÓN</h2><br>
+                <center><img src="img/square-root-27895_1280.png" alt="" width="420" height="340"></center><br>
+                <h2>¿Qué es la radicación?</h2>
+                <p>Antes de ver propiedades, hagamos un repaso de que es la radicación. Es otra manera de expresar que es lo inverso a la potenciación, es decir que, básicamente consiste en encontrar la base de una potencia conociendo el exponente.</p><br>
+                <p>Siendo asi, ¿cuales son las propiedades de la radización?:</p><br>
+                
+                <h2>Raíz de un producto:</h2>
+                <p>Cuando nos referimos a la raíz de un producto, esto quiere decir que dentro de una raíz, hay una multiplicación, y para resolverla, se debe cumplir la siguiente propiedad: </p><br>
+                <center><img src="img/raizpro1.PNG" alt="" width="420" height="200"></center><br>
+                <p>Entonces, esto quiere decir, que lo que se hace, es separar la raiz en dos raices iguales, unicamente cambiando el numero de dentro de la raiz, para poder operarlas de manera individual, se sacan las raices de cada una y ahis si realizar la multiplicación. Ejemplo:</p><br>
+                <center><img src="img/raizpro2.PNG" alt=""></center><br>
+                
+                <h2>Raíz de un cociente:</h2>
+                <p>La raíz de un cociente se refiere a cuando dentro de una raíz esta presente una fracción, para resolverlo, se aplica la siguiente fórmula:</p>
+                <center><img src="img/raizpro3.PNG" alt="" width="420" height="200"></center><br>
+                <p>Esto quiere decir, que lo que haces es dividir esa raiz dentro de una fracción para que tanto el numerador, como el denominador, queden con su raíz propia, y ahi si operarla de manera mas sencilla, ejemplo:</p>
+                <center><img src="img/raizpro4.PNG" alt=""></center><br>
+                
+                <h2>Raíz de una raíz:</h2>
+                <p>Una raíz de una raíz, es cuando dentro de una raíz se encuentra otra raíz, por lo que se debe aplicar la siguiente fórmula:</p><br>
+                <center><img src="img/raizpro5.PNG" alt="" width="420" height="200"></center><br>
+                <p>Para resolverla, basta con que primero se multipliquen los indices de la raiz tanto de dentro, como de fuera, y el radicando se mantiene, ya luego, se puede resolver como una raíz normal, ejemplo:</p><br>
+                <center><img src="img/raizpro6.PNG" alt=""></center><br>
+            </div>
+
+            <div id="tm8" class="tabcontent">
+<h3>Monomios</h3>
+                <br><br>
+                <p>Un monomio es una combinación de números y letras relacionados por multiplicaciones (solo multiplicaciones!!) y los exponentes de las letras solo pueden ser números no negativos.<br>
+                Por ejemplo:<br>
+<br>
+-5ax3<br><br>
+Es un monomio porque son combinaciones de números y letras relacionados solo por multiplicación y el exponente que aparece es un número no negativo.
+<br><br>
+-2m5 + m3<br><br>
+No es un monomio porque aparecen sumas y restas.
+<br><br>
+                    
+</p> 
+                <img src="img/fae.png" width="600">
+                <br><br>
+                <h3>
+                Las partes de un monomio:
+                </h3>
+                <br><br>
+                <p>
+                -Coeficiente: Es el número que multiplica a las letras<br><br>
+-Parte literal: Son las letras que aparezcan en el monomio con los exponentes<br><br>
+-Grado: Es la suma de los exponentes que tenga el monomio.<br><br>
+-Variable: Son cada una de las letras que aparecen en el monomio<br><br>
+Por ejemplo, vamos a ver las partes del siguiente monomio:
+                    <br><br></p>
+                <center>
+                    <p>-2ab2
+</p></center>
+<br><br><p>
+-Coeficiente: -2, es el número que acompaña a la parte literal<br><br>
+-Parte literal: ab2<br><br>
+-Grado: 1 + 2 = 3. El grado del monomio es 3<br><br> 
+-Variable: a, b. Son las dos letras que aparecen en el monomio</p>
+                <br><br>
+                <h3>
+                
+            ¿Qué son dos monomios semejantes?    </h3>
+                <br><br>
+                <p>
+                Dos monomios son semejantes cuando tienen exactamente la misma parte literal.
+<br><br>
+Por ejemplo, un monomio semejante al que hemos visto antes, -2ab2, sería cualquiera que tuviese la misma parte literal: ab2
+<br><br>
+Como los monomios: -6ab2, 5ab2, 18ab2, ab2 …
+                </p>
+                <img src="img/sad.jpg" width="600">
+            </div>
+
+            <div id="tm9" class="tabcontent">
+ <h3>Polinomios</h3>
+                <br><br>
+                <p>Un monomio es una expresión algebraica conformada por un coeficiente, una variable (generalmente x) y un exponente, por ejemplo:</p>
+                <center><img src="img/gia.gif" ></center><br>
+                <p>
+                Un polinomio es una expresión algebraica formada por la suma de un número finito de monomios<br><br></p>
+                    <center><img src="img/asdf.png" ></center>
+                <p><br><br>
+                    donde, n es un número natural y<br>
+
+Coeficientes: a_n, a_{n-1},... ,a_1, a_0<br>
+Variable o indeterminada: x<br>
+Coeficiente principal: a_n<br>
+Término independiente: a_0<br>
+                </p>
+                <br><br>
+                <h3>
+                Ejemplo:
+                </h3>
+                <br><br>
+                <center><img src="img/kk.png" ></center><br><br>
+                <p>
+                Coeficientes: 2, 3,5, -3<br>
+Variable o indeterminada: x<br>
+Coeficiente principal: 2<br>
+Término independiente: -3<br>
+                </p>
+                <br><br>
+                
+                <h3>
+                Grados de un polinomio
+                </h3>
+                <br><br>
+                <p>
+                El grado de un polinomio P(x) es el mayor exponente al que se encuentra elevada la variable x
+<br>
+Según su grado los polinomios pueden ser de:
+                </p>
+            <center><img src="img/nbm.JPG" width="612"></center>
+                <br><br>
+                <h3>
+                Tipos de polinomios
+                </h3>
+                <br><br>
+                <center>
+                <h2>
+                Polinomio nulo
+                </h2>
+                    
+                <br>
+                <p>
+                Es aquel polinomio que tiene todos sus coeficientes nulos.
+                    
+                </p>
+                    <br>
+                <center><img src="img/q1.png" ></center>
+                <br><br>
+                <h2>
+                Polinomio homogéneo
+                </h2>
+                <br>
+                <p>
+               Es aquel polinomio en el que todos sus términos o monomios son del mismo grado.
+                </p>
+                    <br>
+                <center><img src="img/q2.png" ></center>
+                <br><br>
+                    <h2>
+                Polinomio heterogéneo
+                </h2>
+                <br>
+                <p>
+Es aquel polinomio en el que no todos sus términos no son del mismo grado.                </p>
+                    <br>
+                <center><img src="img/q3.png" ></center>
+                <br><br>
+                <h2>
+               Polinomio completo
+                </h2>
+                <br>
+                <p>
+Es aquel polinomio que tiene todos los términos desde el término independiente hasta el término de mayor grado.                </p>
+                    <br>
+                <center><img src="img/q4.png" ></center>
+                <br><br>
+                <h2>
+                Polinomio incompleto
+                </h2>
+                <br>
+                <p>
+Es aquel polinomio que no tiene todos los términos desde el término independiente hasta el término de mayor grado.                </p>
+                    <br>
+                <center><img src="img/q5.png" ></center>
+                <br><br>
+                <h2>
+            Polinomio ordenado
+                </h2>
+                <br>
+                <p>
+Un polinomio está ordenado si los monomios que lo forman están escritos de mayor a menor grado.                </p>
+                        <br>
+                <center><img src="img/q6.png" ></center>
+                <br><br>
+                <h2>
+Polinomios iguales                </h2>
+                <br>
+                <p>
+Dos polinomios son iguales si verifican:<br>
+Los dos polinomios tienen el mismo grado.
+<br>
+Los coeficientes de los términos del mismo grado son iguales.                </p>
+                    <br>
+                <center><img src="img/q7.png" ></center>
+                    <br>
+                <center><img src="img/q77.png" ></center>
+                <br><br>
+                <h2>
+                Polinomios semejantes
+                </h2>
+                <br>
+                <p>
+Dos polinomios son semejantes si verifican que tienen la misma parte literal.                </p>
+                    <br>
+                <center><img src="img/q8.png" ></center>
+                    <br>
+                <center><img src="img/q88.png" ></center>
+                <br><br>
+                <h2>
+Polinomio mónico                </h2>
+                <br>
+                <p>
+Un polinomio es mónico si su coeficiente principal es 1, por ejemplo                </p>
+                    <br>
+                <center><img src="img/q9.png" ></center>
+                <br><br>
+                    </center>
+            </div>
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

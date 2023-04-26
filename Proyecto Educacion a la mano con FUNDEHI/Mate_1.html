@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>1.Matematicas - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">MATEMATICAS - PRIMERO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Numeros</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Suma</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Resta</button>
+              
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Operaciones Combinadas de Suma y Resta</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Nocion de conjuntos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Unidades</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">Decenas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">Centenas</button>
+                
+                
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Numeros</h3>
+                <br>
+                <h3>
+                Comenzaremos con lo basico, VAMOS!!!
+                </h3><br>
+                
+                <p>Los números se utilizan para dos cosas muy distintas:<br>
+                Designar un orden.<br>
+Los números nos permiten comunicar si un elemento va antes o después que otro. Es decir, cual es el primero, el segundo, el tercero… Esta habilidad es la que utilizamos al contar objetos.<br><br>
+                    Expresar una cantidad.<br>
+Gracias a esto podemos comparar conjuntos y operar con ellos.
+Sabiendo qué número de objetos hay en dos conjuntos, podemos decir donde hay más, calcular cuantos objetos tendremos si unimos los dos grupos…
+                </p>
+              <br>
+                    <center>
+                <img src="img/num.jpg" width="420" height="250">
+                    </center>
+                <br>
+                
+                <p>
+                Saber cómo se escriben de una forma correcta los números siempre es importante y por lo general, los diez primeros dígitos son los que más se emplean a la hora de escribir. <br>
+                    Aquí te presento el listado completo de dígitos escritos que van del uno al diez en letras:<br><br></p>
+                <center>
+                <p>
+                    1: uno<br>
+2: dos<br>
+3: tres<br>
+4: cuatro<br>
+5: cinco<br>
+6: seis<br>
+7: siete<br>
+8: ocho<br>
+9: nueve<br>
+10: diez<br>
+                </p>
+                    </center>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Suma</h3>
+                <br>
+                <h3>Muy bien, ahora sigamos con la SUMA</h3>
+                <br>
+                <p>Las sumas y restas son las primeras operaciones matemáticas que aprendemos; algunos niños incluso aprenden antes de comenzar la escuela primaria. Aprender a sumar y restar es sencillo.<br>
+                Sumar es juntar dos o más cosas en un grupo, para saber cuántas hay en total.
+                
+                </p> <br>
+                <center>
+                <img src="img/sum.jpg" width="480">
+                <br>
+                    </center>
+                <p>
+                La suma o adición es la operación matemática que resulta al reunir en una sola varias cantidades.
+
+Las números que se suman se llaman sumandos y el resultado suma o total.
+
+Para su notación se emplea entre los sumandos el signo + que se lee "más".<br>
+                </p>
+                <br>
+                <center>
+                <img src="img/summ.jpg" width="480">
+                    </center>
+                <br><br>
+                <p>
+                Si tengo 2 manzanas verdes y 3 manzanas rojas, y quiero saber cuántas manzanas tengo en total, junto todas las manzanas en un solo cesto y las cuento: tengo 5 manzanas en total, por lo tanto 2 + 3  es igual a 5.
+<br>
+También podemos representar la suma en la línea de números, e ir saltando de un número a otro para hacer la suma.
+                </p>
+                <center>
+                <img src="img/sun.jpg" width="480">
+                    </center>
+                <br>
+                <p>
+                Un pajarito salta hasta el número 3. Luego hace otros 2 saltos, y llega al número 5. Por lo tanto, 2 + 3  es igual a 5.
+                </p>
+                <br>
+                <br>
+                <h3>
+                Veamos algunos casos de suma <br><br>
+                </h3>
+                <p>
+                Sumar un número de una cifra y otro cualquiera <br><br>
+                    Se agregan las unidades del segundo número a las del primero y, caso que no pasen de nueve, los otros números del primer sumando no varían.
+<br>
+533 + 5 = 538<br>
+
+Si la suma pasa a la de 9, se añade una unidad al número que señala las decenas, en el primer sumando.<br>
+
+533 + 9 = 542<br><br>
+                    Sumar números de varias cifras <br><br>
+                    Se colocan los números unos debajo de otros, de modo que las unidades queden debajo de las unidades, la decenas debajo o de las decenas, etc.<br>
+                    <center><img src="img/sm.JPG"></center>
+                </p>
+<p>
+
+Se suman las unidades de la primera columna, si es un número de una cifra, se escribe al pie de la columna.
+
+<br>
+                    <center><img src="img/smm.JPG"></center>
+                </p>
+                <p>
+Y si tiene más de una cifra, se escribe al pie de la columna únicamente la cifra de las unidades, añadiendo la decenas a la columna siguiente, procediendo a continuación de igual forma.
+<br>
+                    <center><img src="img/ms.JPG"></center>
+
+
+
+                </p>
+                
+                
+                
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Resta</h3>
+                <br>
+                <h3>
+                Perfecto, sigamos con la RESTA
+                </h3><br>
+                <p>Restar es quitar una cierta cantidad a otra que ya teníamos.<br>
+                    <center>
+                <img src="img/rss.jpg" width="480">
+                        </center>
+                </p>
+                <p>
+                Si tengo 5 manzanas en una cesta, y quito 2, dentro de la cesta me quedarán 3 manzanas. es decir que 5 menos 2 es igual a 3.<br><br>
+
+Como hemos visto con las sumas, también podemos usar la línea de números para restar.
+<br>
+Por ejemplo:
+                    <center>
+                <img src="img/rrs.jpg" width="480">
+                        </center>
+                </p>
+                <br><br>
+                <p>
+                En una resta,  el primero de los dos números que intervienen y es la cantidad de la que debe restarse otra se llama MINUENDO. El segundo número que debe restarse al primero se llama SUSTRAENDO.
+                </p>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>Operaciones Combinadas de Suma y Resta</h3>
+                <br>
+                
+                <p>Las operaciones combinadas son aquellas que incluyen más de un tipo de operación. Este tipo de operaciones matemáticas incluyen sumas, restas, multiplicaciones y divisiones.</p><br>
+                <h3>
+                Veamos como se resuelven<br><br>
+                </h3>
+                <p>
+                El orden correcto a la hora de resolver estas oraciones es importante. Es necesario resolver cada parte de la operación en el orden adecuado. Este orden o jerarquía a la hora de resolver operaciones combinadas es el siguiente:<br><br></p>
+                
+<center>
+    <p>
+-Paréntesis<br>
+-Muliplicaciones y divisiones<br>
+-Sumas y restas</p>
+                    </center><br>
+                <center>
+                <img src="img/rta.jpg" width="480">
+                        </center>
+                <p>
+                    
+Lo primero que se debe resolver es aquello que esté dentro de un paréntesis. En caso de que la operación combinada no incluya paréntesis, hay que pasar a lo siguiente en la jerarquía. Después de resolver los paréntesis (o saltarlos si no lo lleva), lo siguiente que debemos hacer es resolver las multiplicaciones (conocer las tablas de multiplicar ayuda) y divisiones, en orden de izquierda a derecha.
+                </p><br>
+                <h3>
+                Las multiplicaciones las veremos luego asi que no te preocupes. <br><br> Por lo tanto miremos algunos ejemplos para que podamos practicar juntos.
+                </h3>
+                <center>
+                <img src="img/rtta.jpg" width="500" height="360">
+                        </center>
+                <br><br>
+                <center>
+                <img src="img/rt2.jpg" width="480">
+                        </center>
+            </div>
+            
+            
+            
+<div id="tm5" class="tabcontent">
+                <h3>Nocion de conjuntos</h3>
+    <br>
+    
+                <p>Un conjunto es una agrupación, selección, colección bien definida de elementos, objetos o cosas.</p>
+    <center>
+    <img src="img/noc.JPG" width="510">
+        </center>
+    <br>
+    <h3>
+    Representacion de los conjuntos
+    </h3>
+    <p>
+        Los conjuntos se representan por medio de letras mayúsculas y los elementos por letras minúsculas, símbolos, números, etc.<br>
+Ejemplo: <br><br>
+-El conjunto de las vocales.<br>
+A = { a, e, i, o, u }<br><br>
+
+-El conjunto de los números dígitos.<br>
+B = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }
+
+    </p>
+    <br><br>
+    <h3>
+    Los conjuntos se pueden representar por Extensión y por Comprensión.
+    </h3>
+    <br>
+    <h3>
+    Extension:<br><br>
+    </h3>
+    <p>
+    Los conjuntos se notan por extensión cuando se dan todos sus elementos.
+    </p>
+    <center>
+    <img src="img/ext.jpg">
+        </center>
+    <p>
+    Ejemplo: <br><br>
+-El conjunto de los números naturales menores que seis.<br>
+A = { 0, 1, 2, 3, 4, 5 }
+<br><br>
+-El conjunto de los colores de la bandera de Colombia.<br>
+B = { amarillo, azul, rojo }
+    </p>
+    <br>
+    <h3>
+    Comprension:
+    </h3>
+    <br>
+    <p>
+    Los conjuntos se notan por comprensión cuando se da una cualidad o característica propia de cada uno de los elementos.
+    </p>
+    <br>
+    <p>
+    Ejemplo:<br><br>
+-El conjunto de los colores de la bandera de Colombia.<br>
+A = { x/x es un color de la bandera de Colombia }<br><br>
+-El conjunto de los divisores de seis.<br>
+B = { x/x es un divisor de seis }<br>
+    </p>
+    <br>
+    <center>
+    <img src="img/conn.png" width="300">
+        </center>
+    <br><br>
+    <h3>
+    Veamos cuales son los tipos de conjuntos
+    </h3>
+    <br>
+    <p>
+    Conjunto Unitario: Aquel que tiene un solo elemento.</p><br>
+        <center>
+    <img src="img/ada.jpg">
+        </center>
+<p>Ejemplo: El conjunto del presidente de la República de Colombia.<br><br>
+    </p>
+    <p>
+    Conjunto Vacío: Aquel que no tiene o carece de elementos.</p><br>
+        <center>
+    <img src="img/asd.jpg">
+        </center>
+        <p>Ejemplo: El conjunto de las personas de color verde.<br><br>
+    </p>
+    <p>
+    Conjunto Finito: Aquel que se pueden contar sus elementos.</p><br>
+        <center>
+    <img src="img/est.png">
+        </center>
+        <p>Ejemplo: El conjunto de las vocales.<br><br>
+    </p>
+    <p>
+    Conjunto infinito: Aquel que no se pueden contar sus elementos.</p><br>
+        <center>
+    <img src="img/cons.jpg">
+        </center>
+<p>Ejemplo: El conjunto de las estrellas del universo.
+    </p>
+            </div>
+            
+            
+            
+            
+            
+            <div id="tm6" class="tabcontent">
+                <h3>Unidades</h3><br><br>
+                <p>La unidad es el elemento entero más pequeño que podemos contar. Vamos a representar una unidad con un cubito: <br>
+                </p>
+                    <center>
+                <img src="img/uni.JPG" width="250">
+                        </center>
+                <p>
+                    Para abreviar la palabra “unidad”, escribiremos “u”, por ejemplo:
+                
+                </p>
+                <center>
+                <img src="img/unni.JPG" width="480">
+                        </center>
+                <br>
+                <p>
+                Si lo vemos de esta manera, esto quiere decir que 154 tiene 154 unidades. Una unidad es un solo número, cosa, persona, animal, planta o lo que sea. Si hay tres personas en una habitación, serían 3 unidades. Si hay 26 pelotas, eso quiere decir que hay 26 unidades, y así sucesivamente. ¿Entendido? Bien.
+                </p>
+                <br><br>
+                <h3>
+                Lo ves, es muy facil <br>
+                    Veamos unos ejemplos para seguir aprendiendo
+                </h3>
+                <center>
+                <img src="img/uni1.jpg" width="450">
+                        </center>
+            </div>
+            <div id="tm7" class="tabcontent">
+                <h3>Decenas</h3>
+                <br>
+                <p>Veamos un número de unidades un poco más grande: <br>
+                    <center>
+                <img src="img/dec.JPG" width="120">
+                        </center>
+                <p>Hay muchas unidades, ¿verdad? ¡Pues imagínate cuántas habrá si representamos un número mayor!</p>
+<br>
+                     <center>
+                <img src="img/dec1.JPG" width="150">
+                        </center>
+                <p>Por eso, utilizamos la decena, que agrupa de 10 en 10 las unidades: </p><br>
+                     
+                    <p>Vamos a representar el número 18 utilizando la decena. Debes saber que abreviamos “decena” con la letra “d”. Así: </p><br>  
+                    <center>
+                <img src="img/dec2.JPG" width="250">
+                        </center>
+                <p>La decena es un valor más grande que la unidad, ya que en una decena hay 10 unidades. Mira otros ejemplos:</p><br>
+                     <center>
+                <img src="img/dec3.JPG" width="450">
+                        </center>
+<p>
+                Si juntamos los dedos de dos manos, nos daremos cuenta de que hay 10 dedos, y eso significa que tenemos una decena. Una decena es un número de dos dígitos (por ejemplo: 12, 45, 93, o cualquier número que sea del 10 al 99). Si hay 40 paquetes de comida, podemos decir que hay 4 decenas, porque hay 4 veces ‘10 paquetes’; una decena está formada por 10 unidades, por lo que podemos decir que:
+<br><br>
+1 decena (10 unidades) + 1 decena (10 unidades) + 1 decena (10 unidades) + 1 decena (10 unidades): son 4 decenas (40 unidades).
+                </p>
+
+                
+            </div>
+            <div id="tm8" class="tabcontent">
+                <h3>Centenas</h3><br><br>
+                    <p>Pero nos pasa lo mismo cuando llegamos al 100. Por ejemplo, mira cómo se representaría con decenas y unidades el número 101:</p>
+                        <center>
+                <img src="img/cen.JPG" width="250">
+                        </center>
+                <br>
+                <p>Por eso utilizamos la centena, que equivale a 10 decenas o, lo que es lo mismo, 100 unidades:</p><br>
+                        <center>
+                <img src="img/cen1.JPG" width="250">
+                        </center>
+                     <p>Abreviamos “centena” con la letra “c”. Vamos a ver dos ejemplos:  </p>
+                        <center>
+                <img src="img/cen2.JPG" width="450">
+                        </center>
+                <p>
+                Cuando se habla de centena estamos hablando de cien, de 100 unidades. Si queremos mencionar cuántas partes tiene el número 200, serían 2 centenas, que es lo mismo que decir 20 decenas o 200 unidades.
+<br><br>
+¿Pero qué ocurre cuando queremos repensar un número como ‘154’? No podemos decir ‘16 decenas’ porque serían 160, y tampoco podemos decir ‘2 centenas’ porque es mucho menos de 200.
+                </p>
+                
+            </div>
+           
+             
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>2.Lenguaje - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">LENGUAJE - SEGUNDO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Las Silabas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Mayusculas y Minusculas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Sinonimos y Antonimos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">El Diccionario</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">La Fabula</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">La Carta</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm7')">La Poesía</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm8')">El Diálogo</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm9')">Las Adivinanzas</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm10')">Respuestas de las adivinanzas</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Las Sílabas</h3>
+                <p>Las sílabas es cuando dos letras que pueden ser vocales o consonantes se unen y suenan de manera diferente si estan separadas, por ejemplo: </p>
+                <br>
+                <img src="img/Pelota.png">
+                <p>La palabra pelota tiene 3 sílabas:
+                la primera es PE
+                luego sigue LO
+                y al final esta TA</p>
+                <br>
+                <p>Pero que pasa si quitamos la ultima silaba a la palabra pelota?</p>
+                <br>
+                <center>
+                <img src="img/pensando.png">
+                </center>
+                <br>
+                <p>Exacto queda la palabra PELO ¿Que curioso, no?</p>
+                <br>
+                <center>
+                <img src="img/Pelo.png">
+                <br>
+                    <video width="320" height="240" controls>
+                    <source src="videos/video%20s%C3%ADlabas.mp4">
+                </video>
+                </center>
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Mayusculas y Minusculas</h3>
+                <p>Esta es una regla ortografica la cual indica varias cosa como:</p>
+                <p>-El inicio de un texto</p>
+                <p>-La continuación de un texto despues de un punto</p>
+                <p>-Indicar nombres</p>
+                <br>
+                <p>¿Pero como es una letra mayuscula y una minuscula?</p>
+                <center>
+                <img src="img/Letras_Mayusculas.png">
+                </center>
+                <br>
+                <p>Interesante... las letras mayusculas son más rectas y grandres y las minusculas son pequeñas y curvas</p>
+                <br>
+                <center>
+                    <video width="320" height="240" controls>
+                    <source src="videos/Mayusculas_Minusculas.mp4">
+                </video>
+                </center>
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Sinonimos y Antonimos</h3>
+                <p>Los sinonimos son un grupo de palabras que quieren decir lo mismo, pero no son la misma, por ejemplo:</p>
+                <br>
+                <img src="img/Sinonimo.png">
+                <br>
+                <p>Entonces la palabra feliz y contento quieren decir lo mismo pero sin ser la misma palabra...perfecto, asi ya no repetire palabras al hablar y escribir si se su sinonimo</p>
+                <br>
+                <p>Ahora, ¿que son los antonimos?. Pues los antonimos son palabras que quieren decer algo totalmente opuesto una de la otra, tal es el caso de:</p>
+                <br>
+                <img src="img/Antonimo.png">
+                <br>
+                <p>Recuerden que es mejor usar sinonimos o antonimos para que las persona nos entiendan mejor y estas palabras me ayudaran a escribir un cuento sin usar la misma palabra todo el tiempo.</p>
+                <br>
+                <center>
+                    <video width="320" height="240" controls>
+                    <source src="videos/Sinonimos_Antonimos.mp4">
+                </video>
+                </center>
+                
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>El Diccionario</h3>
+                <p>Un diccionario es como un libro, pero que ayuda a entender que quiere decir una palabra que no conozco. Es muy util si necesito saber que me dijeron si hay una palabra que no entendi.</p>
+                <br>
+                <center>
+                <img src="img/Diccionario.png">
+                </center>
+                <br>
+                <p>Esta es la herramienta definifiva para saber leer, escribir y hablar correctamente...como los mejores superheroes.</p>
+                <br>
+                <center>
+                <img src="img/heroe_diccionario.png">
+                </center>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h3>La Fabula</h3>
+                <p>Las fabulas son unas lecturas cortas que cuentan historias maravillosas y que nos enseñan muchas reflexiones. Cada vez que lees una fabula descubres un mundo totalmente nuevo e interesante y que junto a la imaginación se pueden crear nuevas historias... y lo mejor de todo, creadas por ti.</p>
+                <br>
+                <center>
+                <img src="img/Fabula.png">
+                </center>    
+                <br>
+                <p>Pero la mejor manera de saberlo es leyendo una maravillosa fabula... y una de las mejores fabulas es:</p>
+                <br>
+                <h1>El Leon y el Raton</h1>
+                <br>
+                <p>En un día muy soleado, dormía plácidamente un león cuando un pequeño ratón pasó por su lado y lo despertó. Iracundo, el león tomó al ratón con sus enormes garras y cuando estaba a punto de aplastarlo, escuchó al ratoncito decirle:</p>
+                <p>—Déjame ir, puede que algún día llegues a necesitarme.</p>
+                <p>Fue tanta la risa que estas palabras le causaron, que el león decidió soltarlo.Al cabo de unas pocas horas, el león quedó atrapado en las redes de unos cazadores. El ratón, fiel a su promesa, acudió en su ayuda. Sin tiempo que perder, comenzó a morder la red hasta dejar al león en libertad.El león agradeció al ratón por haberlo salvado y desde ese día comprendió que todos los seres son importantes.</p>
+                <p>Moraleja: No menosprecies a los demás, todos tenemos las cualidades que nos hacen muy especiales.</p>
+                <br>
+                <img src="img/Dibujo_fabula.png">
+                <br>
+                <p>Wow, que gran fabula. Que tal si esta vez escuchamos esta historia.</p>
+                <br>
+                <audio controls>
+                <source src="videos/leon_y_raton.mp3" type="audio/mp3">
+                </audio>
+                <br>
+                <p>Gracias señor Esopo por crear esta y muchas mas fabulas maravillosas que enseñan grandes lecciones.</p>
+                </div>
+                <div id="tm6" class="tabcontent">
+                <h3>La Carta</h3>
+                <p>La carta es un medio de comunicación escrito y formal, el cual es escrito por una persona (el Remitente) para que otra (El Destinatario) la reciba y lea lo que esta escrito.</p>
+                <center>    
+                <img src="img/carta.png">
+                </center>
+                <br>
+                <p>Las cartas esta divididas en varias partes las cuales son</p>
+                <br>
+                <p>El Encabezado: En esta parte es donde se escribe la fecha de la carta, el lugar donde fue escrita y a la persona para la que va dirigida</p>
+                <br>
+                <p>El cuerpo del la carta: Es la parte en la cual se escribe el mensaje que se quiere transmitir.</p>
+                <br>
+                <p>La despedida y firma: Es la parte en la que el remitente se despide del destinarario y coloca su firma.</p>
+                <br>
+                <h3>Ejemplo</h3>
+                <img src="img/Ejemplo_carta.png">
+                <br>
+                <p>Exelente, ahora puedo escribir cartas a todos mis amigos... pero, existen varios tipos de cartas, ¿cual debo usar?.</p>
+                <br>
+                <h3>Tipos de cartas</h3>
+                <p>Formal: Es el tipo de carta para informar temas importantes. Estas son las cartas que le escribe tu padre a su jefe.</p>
+                <br>
+                <img src="img/Carta_formal.png">
+                <br>
+                <p>Informal: Estas cartas son escritas para darselas a tus amigos y contarles de todas tus aventuras.</p>
+                <br>
+                <center>
+                    <video width="320" height="240" controls>
+                    <source src="videos/La%20Carta.mp4">
+                </video>
+                </center>
+                </div>
+                <div id="tm7" class="tabcontent">
+                <h3>La Poesía</h3>
+                <p>La poesía es un tipo de escritura que sirve para expresar sentimientos como el amor, alegria o tristeza con un texto corto.De esta manera podras escribir un mensaje muy especial para alguien, como a tu madre, que seguro le va a gustar.</p>
+                <br>
+                <center>
+                <img src="img/Poema_madre.png">
+                </center>
+                <br>
+                <p>Los poemas estan divididos por versos, que son grupos pequeños de oraciones que riman para que al leerlos se escuchen mas bonitos.Pero es más facil de entender con un ejemplo.</p>
+                <br>
+                <h3>Poema "El grillo y la luna"</h3>
+                <p>Un grillo cantaba</p>
+                <p>cri cri muy contento,</p>
+                <p>mirando a la luna</p>
+                <p>en el firmamento.</p>
+                <br>    
+                <p>cri cri cri le cantaba</p>
+                <p>Eres la mas bella</p>
+                <p>y la luna reía</p>
+                <p>junto a las estrellas</p>
+                <br>    
+                <p>cri cri cri le cantaba</p>
+                <p>Eres tan hermosa</p>
+                <p>y la luna brillaba</p>
+                <p>creyéndose diosa.</p>
+                <center>
+                    <video width="320" height="240" controls>
+                    <source src="videos/Las%20Poes%C3%ADas.mp4">
+                </video>
+                </center>    
+                </div>
+                <div id="tm8" class="tabcontent">
+                <h3>El Diálogo</h3>
+                <p>El diálogo se refiere a la accion que realizamos cuando hablamos con 1 o más personas sobre un tema interesante.</p>
+                <br>
+                <img src="img/Dialogo_ni%C3%B1os.png">
+                <br>
+                <p>Esta es la forma más facil y rapida de comunicar un mensaje a una persona o un grupo, ya que se usa con palabras que conoces, para expresar ideas, sentimientos u opiniones a los demas.</p>    
+                </div>
+                <div id="tm9" class="tabcontent">
+                <h3>Las Adivinanzas</h3>
+                <p>Llego la hora de pensar, ya que es la hora de resonver adivinanzas, pero, ¿Que es una adivinanza?.</p>
+                <br>
+                <center>    
+                <img src="img/ni%C3%B1a_adivinanza.png">
+                </center>    
+                <br>
+                <p>Una adivinanza es una pregunta corta la cual busca que una persona lo responda a manera de juego, entonces, es el momento de resolver unas adivinanzas!!!!.</p>
+                <br>
+                <p>Primera adivinanza:</p>
+                <p>El roer es mi trabajo, el queso mi aperitivo y el gato ha sido siempre mi más temido enemigo.</p>
+                <br>
+                <img src="img/Resuelto.png">
+                <br>
+                <p>Segunda adivinanza:</p>
+                <p>Salta y salta, y la colita le falta.</p>
+                <br>
+                <center>    
+                <img src="img/Pregunta_3.png">
+                </center>
+                <br>    
+                <p>Tercera adivinanza:</p>
+                <p>¿Cuál es el animal que camina con las patas en la cabeza?</p>
+                <br>
+                <center>    
+                <img src="img/Pregunta_4.png">
+                </center>
+                <br>
+                <p>Cuarta adivinanza:</p>
+                <p>Si hay una carrera en el mar, ¿quién es el último en llegar?</p>
+                <br>
+                <center>
+                <img src="img/Final_adivinanza.png">    
+                </center>    
+                </div>
+                <div id="tm10" class="tabcontent">
+                <h3>Respuestas</h3>
+                <img src="img/Respuesta_Adivinanza.png">
+                <br>
+                <p>Respuesta #1: El raton</p>
+                <br>
+                <p>Respuesta #2: La rana</p>
+                <br>
+                <p>Respuesta #3: El piojo</p>
+                <br>
+                <p>Respuesta #4: El delfin</p>
+                </div>            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

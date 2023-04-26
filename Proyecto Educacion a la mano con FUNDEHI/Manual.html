@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Manual - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/32b37dec8f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        
+        <br>
+            <h1 class="glow">MANUAL PARA USO <br>DE Educacion a la mano <br>con FUNDEHI</h1>
+        <br><br>  
+        
+        <article class="container">
+            
+            <div class="container-all">
+       
+                <h1 class="title">¿A quien va dirigido?</h1>
+                    <p>Este Manual va dirigido a profesores de la fundación FUNDEHI por lo que recomendamos leer los siguientes puntos para poder hacer el uso adecuado de esta herramient digital.</p>
+                    <p>Cabe aclarar que los niños también puede aprender a interacturar con la página, por lo que los profesores con ayuda de este pequeño manual pueden tambien enseñarles a los niños como manejar dicha herramienta.</p><br>
+                <h1 class="title">Introducción</h1>
+                    <p>Siempre que entres al Educacion a la mano con FUNDEHI, vas a entrar en la página de inicio, donde hay una pequeña bienvenida e introducción a lo que es dicho proyecto.</p><br>
+                    <center><img src="img/manual1.PNG" class="imagenmanual"></center><br>
+                    <p>En la parte derecha, encontraras la barra de navegación con tres botones, que son: Inicio, asignaturas y Manual.</p><br>
+                    <center><img src="img/manual2.PNG" class="imagenmanual"></center><br>
+                    <p>EL boton de inicio te llevara a la página principal, pero si seleccionas el botón de asignaturas, se te abrira dos opciones más, que son "matemáticas y español".</p><br>
+                    <center><img src="img/manual3.PNG" class="imagenmanual" style="height: 500px"></center><br>
+                    <p>Dichas opciones es para saber que asignaturas deseas trabajar, al presionar cualquier de las dos, se te abriran las opciones de cada curso desde primero hasta quinto.</p><br>
+                    <center><img src="img/manual4.PNG" class="imagenmanual" style="height: 1000px"></center><br><br>
+                    <center><img src="img/manual5.PNG" class="imagenmanual" style="height: 1000px"></center><br>
+                    <p>Ya aqui seleccionas el curso al que deseas ir, y te llevara a una página, con los temas más importante de dicho curso.</p><br>
+                    <center><img src="img/manual6.PNG" class="imagenmanual"></center><br>
+                    <p>Todos los cursos, sin importar la asignatura, tendran dicha vista, ya solo basta con que selecciones el tema que aparece en el cuadro que desees y automaticamente el contenido se actualizara con la información correspondiente.</p><br>
+                    <center><img src="img/manual7.PNG" class="imagenmanual"></center><br>
+                <h1 class="title">Y eso es todo, la página funciona de manera muy sencilla, esperamos que la disfruten.</h1>
+            </div>
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

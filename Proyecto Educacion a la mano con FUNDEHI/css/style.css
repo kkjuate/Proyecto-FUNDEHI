@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+.hr1{
+    border: 10px solid green;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/*-----------------------------*/ 
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+/*----------------------------------------------------------------------*/
+
+.container{
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 10px;
+}
+
+.column{
+    float: right;
+    width: 42.5%;
+    margin-top: 6px;
+    padding: 20px;
+    text-align: center;
+}
+
+.row:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.tituloinicio{
+    text-align: center;
+    font-size: 50px;
+}
+
+.textprincipal{
+    text-align: center;
+    margin-left: 15%;
+}
+
+.glow {
+    margin-left: 10%;
+      font-size: 60px;
+      color: #000000;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+      }
+      to {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00;
+      }
+}
+
+
+/*--------------------------------------------------------*/
+.container-all{
+    width: 85%;
+    float: right;
+    max-width: 85%;
+    margin-right: 20%;
+    margin: auto;
+    padding: 60px;
+    background: #FFFFFF;
+    margin-top: 100px;
+    border-top: 6px solid #65d6a6;
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.sub-title{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container-all img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.container-all p{
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*-----------------*/
+p{
+    font-family: 'Bitter', serif;
+    font-size: 23px;
+}
+.loguni{
+    padding-left: 100px;
+    width: 360px;
+    height: 250px;
+}
+
+.imginiciob{
+    margin-left: 10%;
+}
+
+/*------------------------------------*/
+/*-------*/
+.imgs{
+    width: 500px;
+}
+
+#contenedorr {
+    
+    width: 1000px;
+   padding-left: 100%;
+    overflow: hidden;
+}
+
+#contenedorr ul {
+    list-style: none;
+    width: 2800px;
+    display: flex;
+
+    animation: slide 10s infinite alternate;
+}
+
+@keyframes slide {
+    0% {margin-left: 0px;}
+    20% {margin-left: 0px;}
+
+    25% {margin-left: -500px;}
+    45% {margin-left: -500px;}
+
+    50% {margin-left: -1200px;}
+    70% {margin-left: -1200px;}
+
+    75% {margin-left: -1800px;}
+    100% {margin-left: -1800px;}
+}
+
+/*----------------------------------*/
+
+.botonejerciciosumrest{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*----------------------*/
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track{
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 10px;
+    &:active
+    {
+        background: #8216B1;
+    }}
+
+/*-----------------------------*/
+.container-all .imagenmanual{
+    width: 100%;
+    height: 350px;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_topics.css">
+    <title>3.Matematicas - Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+        <br>
+            <h1 class="glow">MATEMATICAS - TERCERO</h1>
+        <br><br>
+        
+        <article class="temas">
+            <div class="tab">
+                <button class="tablinks" onclick="openTopic(event, 'tm1')" id="defaultOpen">Números Romanos</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm2')">Propiedades de la suma</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm3')">Propiedad de la resta</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm4')">Propiedades de la multiplicación</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm5')">Propiedades de la división</button>
+                <button class="tablinks" onclick="openTopic(event, 'tm6')">Medidas de tiempo</button>
+            </div>
+
+            <div id="tm1" class="tabcontent">
+                <h3>Números Romanos</h3>
+                <p>Los números romanos son un sistema de numeración antiguo utilizado en Roma.A diferencia de el sistema de numeración actual que usa simbolos especiales como el 1, 3, 5 ,7 o 9, los números romanos utilizan letras en mayúscula (que para ese momento tenia un significado totalmente diferente) para indicar un valor determinado segun el sinbolo utilizado.</p>
+                <br>
+                <img src="img/numeros%20romanos.png">
+                <br>
+                <p>Una caracteristica importante sobre los números romanos es el siguiente: segun la posición de los simbolos estos indican un valor u otro, por ejemplo, si juntamos dos I se forma el número dos en romano y si agregamos 3 indicamos el número 3.</p>
+                <br>
+                <img src="img/romanos%202.png">
+                <br>
+                <p>Entonces el número 4 son el mismo simbolo repetido 4 veces,¿verdad?. En este caso cambia un poco ya que ahora se debe usar un nuevo simbolo y una nueva regla. El nuevo simbolo es la V el cual indica el número 5... un momento ¿el cinco, que pasa con el cuatro?.</p>
+                <br>
+                <center>
+                <img src="img/ni%C3%B1o%204%20romano.png">
+                </center>
+                <br>
+                <p>Aqui es donde entra la nueva regla de los números romanos la cual es: si un simbolo esta ubicado en la izquierda de otro se le restara el valor del simbolo. Esto quiere decir que la manera de escribir 4 en romano es IV.</p>
+                <br>
+                <center>
+                <img src="img/4%20romano.png">
+                </center>
+                <br>
+                <p>Ya entiendo, ahora, si el 5 es la V ¿como es el 6 entonces?.Si se dieron cuenta los primeros 3 números eran el mismo simbolo pero que se sumaban para obtener un valor diferente, en ese caso si juntamos el simbolo I con el V nos dara 6 pero, en este momento se debe utilizar una nueva regla de los números romanos la cual es: Si un simbolo se ubica a la derecha de otro su suma el valor de el segundo simbolo.</p>
+                <p>En la siguiente tabla se dara el valor de varios simbolos, los cuales son:</p>
+                <br>
+                <img src="img/Tabla%20valores%20romanos.png">
+            </div>
+
+            <div id="tm2" class="tabcontent">
+                <h3>Propiedades de la suma</h3>
+                <p>Para realizar la suma de numeros naturales de manera correcta se debe tener en cuenta tres propiedades las cuales son:</p>
+                <br>
+                <h3>Propiedad Conmutativa</h3>
+                <p>Esta propiedad dice lo siguiente: Cuando se suman dos números, el orden de los factores no altera el producto.</p>
+                <br>
+                <img src="img/Conmutativa.png">
+                <br>
+                <h3>Propiedad Asociativa</h3>
+                <p>Esta propiedad dice lo siguiente: Cuando se suman tres o más números, la manera de agrupar los valores no afecta el resultado.</p>
+                <br>
+                <img src="img/asociativa.png">
+                <br>
+                <h3>Propiedad de elemento neutro</h3>
+                <p>Esta propiedad dice lo siguiente: Cuando se suma un valor con 0 el resultado es el primer valor.</p>
+                <br>
+                <img src="img/neutro.png">
+            </div>
+
+            <div id="tm3" class="tabcontent">
+                <h3>Propiedad de la resta</h3>
+                <p>A diferencia de la suma, la resta solo cuente con una sola propiedad la cual es:</p>
+                <h3>Propiedad de la igualdad</h3>
+                <p>Esta propiedad dice lo siguiente: El minuendo es el resultado de la suma del sustraendo y la diferencia.</p>
+                <br>
+                <center>
+                <img src="img/propiedad%20resta.png">
+                </center>
+            </div>
+ 
+            <div id="tm4" class="tabcontent">
+                <h3>Propiedades de la Multiplicación</h3>
+                <p>Las propiedades que siempre se deben tener en cuenta al momento de hacer una multiplicación son:</p>
+                <br>
+                <h3>Propiedad Conmutativa</h3>
+                <br>
+                <p>Esta propiedad dice lo siguiente: El orden de los factores no afecta el resultado.</p>
+                <br>
+                <center>
+                <img src="img/commutativa%20multi.png">
+                </center>    
+                <br>
+                <h3>Propiedad Asociativa</h3>
+                <br>
+                <p>Esta propiedad dice lo siguiente: La manera en la que se agrupan los factores no afecta el resultado.</p>
+                <br>
+                <img src="img/Asociacion%20multi.png">
+                <br>
+                <h3>Elemento neutro</h3>
+                <br>
+                <p>Esta propiedad dice lo siguiente: Todo número multiplicado por 1 (excepto el 0) da el mismo número.</p>
+                <br>
+                <center>
+                <img src="img/neutro%20multi.png">+
+                <br>
+                <h3>Propiedad Distributiva</h3>
+                <br>
+                <p>Esta propiedad dice lo siguiente: La multiplicación de un número por una suma es igual a los números que son sumados mutiplicados por el multiplicador inicial.</p>
+                <br>
+                <img src="img/Distributiva%20multi.png">    
+                </center>
+            </div>
+
+            <div id="tm5" class="tabcontent">
+                <h3>Propiedades de la División</h3>
+                <p>Estas son reglas importantes al momento de realizar una división:</p>
+                <br>
+                <h3>La división no es Commutativa</h3>
+                <br>
+                <p>A diferencia de la multiplicación, el orden de los factores si puede afectar el resultado</p>
+                <br>
+                <center>
+                <img src="img/Division_1.png">    
+                </center>
+                <br>
+                <h3>La división no es Asociativa</h3>
+                <br>
+                <p>En la división el agrupar de diferente manera las diviones si afecta al resultado final</p>
+                <br>
+                <center>
+                <img src="img/Division_2.png">
+                <img src="img/division_2.5.png">    
+                </center>
+                <br>
+                <h3>No se puede dividir entre 0</h3>
+                <br>
+                <p>Todas las divisiones en las que el divisor sea 0 son imposibles de resolver ya que es un error.</p>
+                <br>
+                <center>
+                <img src="img/dividir%203.png">
+                </center>
+            </div>
+            <div id="tm6" class="tabcontent">
+                <h3>Medidas de tiempo</h3>
+                <p>Las medidas de tiempo son una forma de saber en que momentos estamos, es decir, en que parte del dia estamos actualmente. Las maneras en las que se mide este valor son:</p>
+                <br>
+                <h3>Periodo de un día</h3>
+                <p>El día tiene 24 horas.</p>
+                <p>1 hora (h) tiene 60 minutos (min)</p>
+                <p>1 cuarto de hora: 15 minutos</p>
+                <p>Media hora: 30 minutos</p>
+                <p>3 cuartos de hora: 45 minutos</p>
+                <p>1 minuto tiene 60 segundos (s).</p>
+                <br>
+                <center>
+                <img src="img/reloj%20mate.png">
+                </center>
+                <br>
+                <h3>Periodos superiores a un día</h3>
+                <p>1 semana son 7 días</p>
+                <p>1 quincena son 15 días</p>
+                <p>1 mes son 30 / 31 días (febrero tiene 28 días, y cada 4 años tiene 29 días)</p>
+                <p>1 año tiene 12 meses / 365 días (cada 4 años tiene un día más en febrero, con lo que son 366 días; se le llama año bisiesto)
+</p>
+                <p>1 lustro son 5 años</p>
+                <p>1 década son 10 años</p>
+                <p>1 siglo son 100 años</p>
+                <p>1 milenio son 1.000 años</p>
+                <br>
+                <img src="img/calendario.png">
+            </div>
+            
+            <script>
+                function openTopic(evt, topic) {
+                    var i, tabcontent, tablinks;
+                
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    
+                    document.getElementById(topic).style.display = "block";	
+                    evt.currentTarget.className += " active";
+                    
+                    }
+
+                    document.getElementById("defaultOpen").click();
+            </script>
+            
+            
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

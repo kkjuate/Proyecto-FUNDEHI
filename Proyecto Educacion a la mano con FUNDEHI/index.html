@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Educacion a la mano con FUNDEHI</title>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/931c881e99.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/32b37dec8f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href=img/icono.ico />
+</head>
+    
+<body>
+    
+    <header>
+        <img style="padding-left: 200px" src="img/banner.png">
+        <hr class="hr1">
+    </header>
+
+    <div class="sidenav">
+        <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+        <button class="dropdown-btn"><i class="fas fa-book"></i> Asignaturas 
+            <i class="fa fa-caret-down"></i>
+        </button>
+            <div class="dropdown-container">
+                <button class="dropdown-btn"><i class="fas fa-book-reader"></i> Español
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                    <div class="dropdown-container">
+                        <a href="Espa%C3%B1ol_1.html">Primero</a>
+                        <a href="Espa%C3%B1ol_2.html">Segundo</a>
+                        <a href="Espa%C3%B1ol_3.html">Tercero</a>
+                        <a href="Espa%C3%B1ol_4.html">Cuarto</a>   
+                        <a href="Espa%C3%B1ol_5.html">Quinto</a>
+                    </div>
+                <button class="dropdown-btn"><i class="fas fa-calculator"></i> Matematicas
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="Mate_1.html">Primero</a>
+                    <a href="Mate_2.html">Segundo</a>
+                    <a href="Mate_3.html">Tercero</a>
+                    <a href="Mate_4.html">Cuarto</a>   
+                    <a href="Mate_5.html">Quinto</a>
+                </div>
+        </div>
+      <a href="Manual.html"><i class="fas fa-question-circle"></i> Manual</a>
+    </div>
+
+<!--Scrip para el menu vertical-->   
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+        });
+    }
+</script>
+    
+    <main>
+             
+        <article class="container">
+            <div>
+                <center>
+                    <br><br>
+                        <h1 class="glow"> Educacion a la mano con FUNDEHI</h1>
+                    <br><br>
+                        <img src="img/nins.jpg" class="imginiciob">
+                    <br>
+                    <br><p class="textprincipal">
+                    La presente pagina, llamada Educacion a la mano con FUNDEHI, tiene como objetivo, ser una herramienta educativa para los niños que pertenecen a la fundación FUNDEHI, que se encuentran cursando desde primero hasta grado quinto, la cual se encuentra enfocada a que los niños, puedan tener un aprendizaje mucho mas dinamico y sencillo en el area de matematicas y lenguaje, por lo que se encontraran los temas mas importantes de cada curso. Esperamos que sea de gran ayuda para la fundación, y que sea realmente productiva.
+                    </p>
+                </center>
+            </div>
+            <!-- -->
+            <br>
+            <br>
+            
+            <div class="container-all">
+       
+                   <h1 class="title">Objetivos</h1>
+                   <img src="img/ola.png" alt="">
+                   <h1 class="sub-title">Refuerzo de tus conocimientos
+                            </h1>
+                   <p>Desarrollar las habilidades comunicativas de lectura, escritura y expresión oral a través de talleres de refuerzo enfocados a cursos desde el primero hasta quinto de primaria, teniendo como base los lineamientos curriculares y la política de estándares básicos en el área de español. Aparte de eso se busca potenciar las capacidades interpretativas, argumentativa y propositiva en concordancia con la misión y la visión institucional que es el objetivo de la fundación.</p>
+                   <p>Con respecto a el área de matemáticas, se busca el mejoramiento de las diferentes habilidades de comprensión y resolución de problemas matemáticos, desde las cosas más básicas como sumas o restas hasta  operaciones con números decimales.</p>
+            </div>
+            <!--
+            <div id="contenedorr">
+                <ul>
+                    <li><img src="img/img1.png" alt="" class="imgs"></li>
+                    <li><img src="img/img2.jpg" alt="" class="imgs"></li>
+                    <li><img src="img/img3.jpg" alt="" class="imgs"></li>
+                    <li><img src="img/img4.jpg" alt="" class="imgs"></li>
+                </ul>
+            </div>  -->
+        </article>
+
+    </main>
+    
+    <footer>
+    
+    </footer>
+</body>
+    
+</html>

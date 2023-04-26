@@ -1,0 +1,4 @@
+Buen día para todos, para poder acceder a la página web, solo debes abrir
+el archivo que se llama INDEX.HTML
+
+Gracias
